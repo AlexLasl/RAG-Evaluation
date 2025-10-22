@@ -1,6 +1,6 @@
 import streamlit as st
 import html
-from evaluation_examples import examples
+from examples import examples
 # ---------- Beispielhafte Datenstruktur ----------
 examples = examples
 
