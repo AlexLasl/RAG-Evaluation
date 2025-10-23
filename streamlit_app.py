@@ -42,7 +42,38 @@ def render_hallucinations(answer: str, hallucinations):
         answer = answer[:start] + span + answer[end:]
     return answer
 
+def render_token(tokens_with_probs: list[dict]) -> str:
+        """
+        Nimmt eine Liste von Dicts mit Struktur
+        [{'token': <str>,  'prob': <float>}, ...]
+        und gibt einen HTML-String zurück, in dem Tokens farblich markiert sind.
+        """
+        highlighted = ""
+        print("in token visualisation")
 
+        for item in tokens_with_probs:
+            token = item["token"]
+            conf = item["prob"]  # Wahrscheinlichkeit, dass Token halluziniert ist
+
+            # Farbcodierung je nach Schwellenwert
+            if conf > 0.8:
+                color = "rgba(255, 77, 77, 0.3)"   # Rot = stark halluziniert
+            elif conf > 0.4:
+                color = "rgba(255, 166, 77, 0.3)"  # Orange = unsicher
+            elif conf > 0.05:
+                color = "rgba(255, 255, 204, 0.3)" # gelb = eher korrekt
+
+            else:
+                color = "transparent"  # keine Markierung
+
+            if color == "transparent":
+                highlighted += token
+            else:
+                highlighted += (
+                    f"<span style='background-color:{color}' title='p={conf:.2f}'>"
+                    f"{token}</span>"
+                )
+        return highlighted
 # ---------- Haupt-App ----------
 def main():
     st.set_page_config(page_title="RAG-Halluzinationen", page_icon="🤖")
@@ -66,12 +97,18 @@ Fahre mit der Maus über markierte Textstellen, um Details zu sehen.
 
     # Antwort anzeigen
     st.subheader("💬 Antwort des Chatbots")
-    rendered = render_hallucinations(ex["answer"], ex["hallucinations"])
+    if ex["id"] == 4:
+        rendered = ex["halucinations_token"]
+    else:
+        rendered = render_hallucinations(ex["answer"], ex["hallucinations"])
     st.markdown(rendered, unsafe_allow_html=True)
 
     # Kontext ausklappbar unter der Antwort
     with st.expander("📚 Kontext anzeigen"):
-        st.write(ex["context"])
+        st.markdown(
+        f"<div style='white-space: pre-line; margin: 0; font-family: sans-serif;'>{html.escape(ex['context'])}</div>",
+        unsafe_allow_html=True
+    )
 
     # Navigation
     col1, col2 = st.columns([1, 1])

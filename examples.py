@@ -5,7 +5,7 @@ examples = [
 
 
 
-    {
+    {   "id": 1,
         "prompt": "Write approximately half a page for a seminar paper on the topic “How Large Language Models (LLMs) are used in higher education.” In this section, define what Large Language Models are and explain how they work in a clear and concise way. The section should serve as a theoretical foundation for the later discussion on the use of LLMs in higher education. Use an academic tone and include appropriate APA-style citations for all definitions and key concepts.",
         "context": "Der Kontext beschreibt: Die Schweiz hat vier Landessprachen und Bern ist Sitz der Regierung.",
         "answer": """### "Large Language Models (LLMs) in Higher Education: A Theoretical Foundation\nDefinition of Large Language Models (LLMs)\nLarge Language Models (LLMs) are advanced artificial intelligence systems designed to understand and generate human-like text. These models, such as GPT-4 and ChatGPT, are trained on vast datasets containing written texts from various domains, including books, articles, and web content. The training process involves converting text into high-dimensional \"embeddings\" that capture semantic meaning. LLMs then use these embeddings to perform tasks like text generation, translation, summarization, and question-answering (Ghader et al., 2024; Gao & Callan, 2021).\n\nLLMs operate through a series of layers or \"neural networks\" that encode context from preceding inputs. Each layer processes information to produce outputs at the final layer. The models utilize attention mechanisms to weigh the importance of different words in a sentence when generating responses (Meyer et al., 2023).\nHow LLMs Work\n\nWhen tasked with generating text, an LLM takes user input, processes it through its layers, and produces a response based on patterns learned during training. While capable of creative tasks, LLMs lack true consciousness or autonomy; they merely mimic human-like language generation (Meyer et al., 2023).\nLimitations of LLMs\n\nDespite their capabilities, LLMs exhibit limitations. They often produce fabricated information when encountering data gaps, as noted in Meyer et al., 2023, where ChatGPT has been known to misrepresent knowledge by generating responses confidently without proper context (Ghader et al., 2024). Additionally, their accuracy varies depending on the training data's quality and relevance. For example, they may struggle with specialized jargon or cultural nuances not adequately represented in their training datasets.\nApplications of LLMs in Higher Education\n\nIn higher education, LLMs can be instrumental tools for academic support. They assist students by generating paraphrased explanations, offering writing guidance, or even assisting with complex research tasks (Meyer et al., 2023). Educators may use them to create personalized feedback, generate lecture materials, or grade essays using automated systems (Ghader et al., 2024; Gao & Callan, 2021).\nConclusion\nLLMs represent promising technologies with diverse applications in higher education. However, their limitations necessitate careful implementation and verification of outputs to ensure accuracy and fairness.""",
@@ -102,9 +102,10 @@ examples = [
               "text": "Meyer, J., He, Y., & Mosbach, M. (2023). ChatGPT and large language models in academia: Opportunities and challenges. Journal of Educational Technology, 45(6), 789–800.",
               "explanation": "Die spezifischen bibliografischen Angaben (Zeitschriftenname, Band, Ausgabe, Seitenzahlen) sind im bereitgestellten Kontext nicht enthalten. Diese detaillierten Referenzdaten wirken erfunden oder nicht durch die vorgelegten Kontextauszüge belegt."
             }
-        ]
+        ],
+        "halucinations_token": []
     },
-    {
+    {   "id": 2,
         "prompt": "For a seminar paper in the course “Digitalization and AI” write an analytical text discussing the ethical risks of using artificial intelligence in higher education teaching. Identify and critically examine what is considerd to be the three most significant ethical risks. Support your analysis with relevant academic literature and credible sources." ,
         "context":""" d:\data\llms in higher education\Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.8C.3 this tool for academic work (Lee, 2023). With the rapid evolution of technology, authors have become more reliant on AI as an easy-to-use tool that complements their work. However, a raising conce rn is the ethical aspects of these AI tools, where misuse can lead to the lack of creative thinking and research integrity, not to mention the inaccuracies this technology yields when not given exact prompts. Moreover, students can also lose their ability to produce original ideas and to present correct arguments to prove their research (Arif et al., 2023). There has yet to be implemented a correct way to manage AI-assisted learning and to control AI tool usage in educ ational institutions, but the risks that are present in its implementation are visible and worthy of attention and analysis. For instance, while ChatGPT is a powerful tool that can provide assistance and information, its misuse undermines the principles o f academic integrity and;
 
@@ -192,9 +193,10 @@ start detection
                     "text": "- Ivanov, A., & Soliman, M. (2023). \"Ethical Considerations in AI-Assisted Learning: Implications for Higher Education.\" Educational Technology Research and Development.",
                     "explanation": "Ivanov & Soliman (2023) sind im Kontext genannt, doch die konkrete bibliografische Angabe (Titel und Zeitschrift) ist im vorliegenden Kontext nicht direkt belegt."
                 }
-        ]
+        ],
+        "halucinations_token": []
     },
-    {
+    {   "id": 3,
         "prompt": "For a seminar paper in the course “Digitalization an AI” write an analytical text discussing the opportunities and positive impacts of using artificial intelligence in higher education teaching. Identify and critically examine what you consider to be the three most significant opportunities. Support your analysis with relevant academic literature and credible sources.",
         "context": """d:\data\llms in higher education\Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.0C.2
 challenges and opportunities of  artificial intelligence - (AI) assisted  learning, all within the research area of dig ital education. For this, a
@@ -282,33 +284,40 @@ In conclusion, while AI presents significant opportunities for enhancing educati
                     "text": "As Meyer et al. (2023) caution, universities must adapt to these changes without over-relying on AI, ensuring that both educators and students remain adept at navigating this evolving landscape.",
                     "explanation": "Die Aussage wird explizit Meyer et al. (2023) zugeschrieben. Im Kontext sind zwar Verweise auf Meyer et al. vorhanden, aber kein direktes Zitat, das diese bestimmte Warnung oder den Wortlaut belegt. Die Zuschreibung ist daher nicht eindeutig durch den gegebenen Kontext gedeckt."
                 }
-            ]
-    },
-    {
+            ],
+        "halucinations_token": []
+      },
+    {   "id": 4,
         "prompt": "Ich bin Student im Bereich Wirtschaftsinformatik und versuche gerade zu verstehen, was genau ein Operational Data Store (ODS) ist. Kannst du mir bitte einfach und verständlich erklären, was ein ODS ist und macht.",
-        "context": """ f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.61C.1
+        "context": """ Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.62)
 (Inmon 1999, S. 12 ff.). Die einzelnen Charakteristika des ODS werden im Folgenden  erläutert: 
-• Themenorientierung Die Konzeption eines ODS erfogt  – genau wie beim Data Warehouse  – anhand entscheidungsorientierter Perspektiven. Häufig verwendete Dimensionen betreffen z. B. die  Produkte, Regionen oder Kunden (vgl. Abschn. 2.2.1). 
-• Integration Die im ODS enthaltenen Daten stammen aus den operativen Quellsystemen des Unter- nehmens. Bei der Überführung der Daten in den ODS erfolgt eine Transformation zu  einer unternehmensweit einheitlichen und inhaltlich widerspruchsfreien Datensamm
-- lung. Der Transformationsprozess zur Befüllung des ODS ist daher dem Transformationsprozess zum Beladen eines Data Warehouse sehr ähnlich, beinhaltet jedoch primär  nur die Stufen der Filterung und Harmonisierung. 
-• Zeitpunktbezug Im ODS findet keine explizite Historisierung der übernommenen Daten statt. In der  Regel werden die Daten lediglich über eine Zeitspanne von mehreren Tagen oder;
+• Themenorientierung 
+Die Konzeption eines ODS erfogt  – genau wie beim Data Warehouse  – anhand entscheidungsorientierter Perspektiven. Häufig verwendete Dimensionen betreffen z. B. die  Produkte, Regionen oder Kunden (vgl. Abschn. 2.2.1). 
+• Integration 
+Die im ODS enthaltenen Daten stammen aus den operativen Quellsystemen des Unter- nehmens. Bei der Überführung der Daten in den ODS erfolgt eine Transformation zu  einer unternehmensweit einheitlichen und inhaltlich widerspruchsfreien Datensammlung. Der Transformationsprozess zur Befüllung des ODS ist daher dem Transformationsprozess zum Beladen eines Data Warehouse sehr ähnlich, beinhaltet jedoch primär  nur die Stufen der Filterung und Harmonisierung. 
+• Zeitpunktbezug 
+Im ODS findet keine explizite Historisierung der übernommenen Daten statt. In der  Regel werden die Daten lediglich über eine Zeitspanne von mehreren Tagen oder;
 
-f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.61C.2
-• Zeitpunktbezug Im ODS findet keine explizite Historisierung der übernommenen Daten statt. In der  Regel werden die Daten lediglich über eine Zeitspanne von mehreren Tagen oder   Wochen – primär aus Recovery-Gründen – vorgehalten. Daher sind auch keine zeit - raumbezogenen Auswertungen möglich. 
-• Volatilität Die Daten im ODS werden regelmäßig aktualisiert. Jede Änderung der Daten in den  operativen Quellsystemen führt zu einem Überschreiben der Daten im ODS. Es existie- ren jedoch Unterschiede in der Aktualisierungshäufigkeit. Die Datenfortschreibung  kann transaktionssynchron, d. h. zeitlich parallel zu den Änderungen in den Quellsys - temen, stündlich oder auch täglich durchgeführt werden. Um die hohe Aktualität der  Daten sinnvoll nutzen zu können, sollte ein ODS eine hohe Performance aufweisen. 
+
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.62)
+• Zeitpunktbezug   
+Im ODS findet keine explizite Historisierung der übernommenen Daten statt. In der  Regel werden die Daten lediglich über eine Zeitspanne von mehreren Tagen oder   Wochen – primär aus Recovery-Gründen – vorgehalten. Daher sind auch keine zeit - raumbezogenen Auswertungen möglich. 
+• Volatilität 
+Die Daten im ODS werden regelmäßig aktualisiert. Jede Änderung der Daten in den  operativen Quellsystemen führt zu einem Überschreiben der Daten im ODS. Es existie- ren jedoch Unterschiede in der Aktualisierungshäufigkeit. Die Datenfortschreibung  kann transaktionssynchron, d. h. zeitlich parallel zu den Änderungen in den Quellsys - temen, stündlich oder auch täglich durchgeführt werden. Um die hohe Aktualität der  Daten sinnvoll nutzen zu können, sollte ein ODS eine hohe Performance aufweisen. 
 • Hoher Detaillierungsgrad Da die Daten im ODS hauptsächlich für Analysen auf der Basis des operativen Kontex-;
 
-f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.61C.3
-Daten sinnvoll nutzen zu können, sollte ein ODS eine hohe Performance aufweisen. 
-• Hoher Detaillierungsgrad Da die Daten im ODS hauptsächlich für Analysen auf der Basis des operativen Kontex- tes herangezogen werden, werden sie sehr detailliert festgehalten. Häufig erfolgt die  2 Datenbereitstellung und -modellierung;
 
-f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.46C.1
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung (S.62)
+Daten sinnvoll nutzen zu können, sollte ein ODS eine hohe Performance aufweisen.
+• Hoher Detaillierungsgrad 
+Da die Daten im ODS hauptsächlich für Analysen auf der Basis des operativen Kontex- tes herangezogen werden, werden sie sehr detailliert festgehalten. Häufig erfolgt die  2 Datenbereitstellung und -modellierung;
+
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf(S.47)
 Komponenten zum Einsatz, die gesondert in Abschn. 2.5 behandelt werden. Data Marts sind kleinere Datenpools für eine Klasse von Applikationen, die i. d. R. für  einen eingeschränkten Benutzerkreis aufgebaut werden. Ihre Daten werden mit Hilfe wei- terer Transformationsprozesse aus dem Core Data Warehouse extrahiert. Ein Operational Data Store beinhaltet aktuelle transaktionsorientierte Daten aus ver- schiedenen operativen Quellsystemen und stellt sie für Anwendungs- und Auswertungs - zwecke bereit. Die Daten werden hierbei jedoch nicht längerfristig historisiert, sondern –  in Analogie zur operativen Datenhaltung  – im Bedarfsfalle durch neue Transaktionen  überschrieben (Inmon et al. 2000, S. 218 f.; Mucksch 2006, S. 136). Die Metadaten beschreiben die Datenstruktur der gespeicherten DWH- und ODS-   Daten. Sie können daher als „Daten über Daten“ bezeichnet werden und
 erlauben eine  gezielte und strukturierte Auswertung von Informationen über Zusammenhänge der ge -;
 
-f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.42C.1
-Eine wesentliche Aufgabe bei der Erstellung eines Data Warehouse stellt die Integration der entscheidungsrelevanten Daten aus den unterschiedlichen operativen und externen Quellen zu einer inhaltlich widerspruchsfreien Datensammlung dar. Diese Aufgabe erweist sich in der Realität meist als äußerst komplex, weil die historisch gewachsenen operativen Systeme mit den ihnen zugrunde liegenden Datenhaltungssystemen häufig Datenredundanzen, Inkonsistenzen und semantische Widersprüche aufweisen.
-• Zeitraumbezug
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.42)
+Eine wesentliche Aufgabe bei der Erstellung eines Data Warehouse stellt die Integration der entscheidungsrelevanten Daten aus den unterschiedlichen operativen und externen Quellen zu einer inhaltlich widerspruchsfreien Datensammlung dar. Diese Aufgabe erweist sich in der Realität meist als äußerst komplex, weil die historisch gewachsenen operativen Systeme mit den ihnen zugrunde liegenden Datenhaltungssystemen häufig Datenredundanzen, Inkonsistenzen und semantische Widersprüche aufweisen.\n• Zeitraumbezug
 Während Daten in operativen Systemen typischerweise transaktionsorientiert und somit zeitpunktbezogen erzeugt und abgelegt werden, repräsentieren Daten im Data Warehouse häufig einen Zeitraum, z. B. einen Tag, eine Woche oder einen Monat.;
 
 """,
@@ -353,9 +362,9 @@ In Summe kann man den ODS als eine Art Zwischenspeicher betrachten, der aktuelle
                 "explaination": "Die Passage hebt hervor, dass bestimmte semantische Mängel nicht durch automatische Prüfungen wie Plausibilitäts- oder Wertebereichsprüfungen oder Mustererkennung erkannt werden können und daher Expertenwissen benötigen. Das ist weitgehend korrekt im Sinne des zitierten Kontexts, aber die Formulierung ist absolut (‚nicht identifiziert werden können‘). Das ist zu pauschal: mit fortgeschrittenen Algorithmen (z. B. ML-basierte Anomalieerkennung, semantische Validierungsverfahren, Knowledge-Graph-Checks) lassen sich manche semantischen Inkonsistenzen erkennbar machen. Deshalb ist die Aussage in ihrer Absolutheit ungenau/übergeneralisiert.",
                 "confidence": 0.70
             }
-            ]
-    },
-{
+            ],
+        "halucinations_token": []},
+    {   "id": 5,
         "prompt": "Was sind Metadaten und wie unterscheiden sich die unterschiedlichen Arten von Metadaten",
         "answer": """Metadaten sind allgemein Informationsdaten, die zur Beschreibung der Bedeutung und Eigenschaften von Objekten wie zum Beispiel Büchern in Bibliotheken, verwendet werden. Dazu dienen sie zur besseren Interpretation, Einordnung, Verwaltung und Nutzung der Objekte. Sie werden daher direkt in den Datenobjekten gespeichert. Metadaten können nach Art und Herkunft unterschieden werden.
 
@@ -365,54 +374,64 @@ Weitere Arten von Metadaten sind (semi-)aktive Metadaten, die Strukturinformatio
 
 Metadaten dienen zur Effizienzsteigerung der Entwicklung und des Betriebs von BIA-Anwendungssystemen und erleichtern die Navigation und stellen detaillierte Informationen über Systemkomponenten sowie Prozesse zur Verfügung.
         """,
-        "context": """ f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.64C.0 43 2.3.4 Metadaten, Stammdaten und Referenzdaten Metadaten werden zur Beschreibung der Bedeutung und der Eigenschaften von Objekten eingesetzt, um diese besser interpretieren, einordnen, verwalten und nutzen zu können. So werden beispielsweise Bücher in Bibliotheken mit Signaturen versehen, nach Schlagwor- ten registriert und auf der Basis von Titeln, Autoren, Einsatzgebieten u. ä. klassifiziert. Diese Informationen werden in Form von Metadaten in spezielle Systeme eingestellt, ge- pflegt und den Benutzern zugänglich gemacht, um die Buchbestände sinnvoll verwenden zu können. Die Begrifflichkeit meta lässt sich aus dem Griechischen ableiten und wird hier in der Bedeutung „auf einer höheren Stufe bzw. Ebene befindlich“ verwendet. In der Datenverarbeitung werden unter Metadaten allgemein alle Arten von Informa- tionen verstanden, die für die Analyse, den Entwurf, die Konstruktion und die Nutzung eines Informationssystems erforderlich sind (Vaduva und Vetterli 2001, S.  273; Staudt;
+        "context": """ Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.65) 43 2.3.4 Metadaten, Stammdaten und Referenzdaten Metadaten werden zur Beschreibung der Bedeutung und der Eigenschaften von Objekten eingesetzt, um diese besser interpretieren, einordnen, verwalten und nutzen zu können. So werden beispielsweise Bücher in Bibliotheken mit Signaturen versehen, nach Schlagwor- ten registriert und auf der Basis von Titeln, Autoren, Einsatzgebieten u. ä. klassifiziert. Diese Informationen werden in Form von Metadaten in spezielle Systeme eingestellt, ge- pflegt und den Benutzern zugänglich gemacht, um die Buchbestände sinnvoll verwenden zu können. 
+Die Begrifflichkeit meta lässt sich aus dem Griechischen ableiten und wird hier in der Bedeutung „auf einer höheren Stufe bzw. Ebene befindlich“ verwendet. 
+In der Datenverarbeitung werden unter Metadaten allgemein alle Arten von Informa- tionen verstanden, die für die Analyse, den Entwurf, die Konstruktion und die Nutzung eines Informationssystems erforderlich sind (Vaduva und Vetterli 2001, S.  273; Staudt;
 
-f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.66C.1 ständigkeit. Metadaten sind deshalb auch ein integraler Bestandteil des Datenqualitäts- managements (vgl. auch Abschn. 5.3.7). • Begriffsverständnis Die Metadaten dokumentieren die fachlichen Kennzahlen bzgl. ihrer Bezeichnung, Ab- grenzung, Herkunft und Verwendung. Die entscheidungsunterstützende Datenhaltung stellt somit einen Single Point of Truth dar, der über die Metadaten organisationsweit nutzbar gemacht wird und zu einer abgestimmten Terminologie im Unternehmen führt. Syntaktische Harmonisierung Bereinigte Extrakte Extrakte Bereinigte Extrakte Extrakte Bereinigte Extrakte Extrakte ... Operative Datenbestände Produktion Technik Vertrieb Personal F&E Beschaffung ... Filterung Harmonisierung Aggregation Dimensions- Hierarchisierung Anreicherung Berechnung betriebs- wirtschaftlicher Kenngrößen Datenzugriffe Datenzugriffe Datenzugriffe Metadaten über rollenspezifische Benutzer- Profile, Verantwortlichkeiten, ... Metadaten über generierte betriebswirtschaftliche;
 
-f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.65C.0 44 • (Semi-)aktive Metadaten enthalten Strukturinformationen und Transformationsregeln und werden als integrale Bestandteile der entscheidungsunterstützenden Datenhal - tungssysteme abgelegt. Diese Informationen können zu einer direkten (auch software- gestützten) Überprüfung von Strukturen herangezogen (semi-aktive Metadaten) bzw. von Werkzeugen zur Laufzeit interpretiert und zur unmittelbaren Ausführung von Transformations- oder Analyseprozessen genutzt werden (aktive Metadaten). Des Weiteren lassen sich technische und fachliche Metadaten differenzieren. Techni- sche Metadaten konzentrieren sich auf IT-orientierte Aspekte der Transformationsschicht 1 (Filterungsschicht), während fachliche Metadaten die Schichten 2 bis 4 (Harmonisierung, Aggregation, Anreicherung) und die Berechtigungsverwaltung fokussieren (Kemper 1999, S. 224). Die Erzeugung und das Management der Metadaten dienen • der Effizienzsteigerung der Entwicklung und des Betriebs von BIA-Anwendungssyste- men sowie;
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.67) ständigkeit. Metadaten sind deshalb auch ein integraler Bestandteil des Datenqualitäts- managements (vgl. auch Abschn. 5.3.7). 
+• Begriffsverständnis 
+Die Metadaten dokumentieren die fachlichen Kennzahlen bzgl. ihrer Bezeichnung, Ab- grenzung, Herkunft und Verwendung. Die entscheidungsunterstützende Datenhaltung stellt somit einen Single Point of Truth dar, der über die Metadaten organisationsweit nutzbar gemacht wird und zu einer abgestimmten Terminologie im Unternehmen führt. Syntaktische Harmonisierung Bereinigte Extrakte Extrakte Bereinigte Extrakte Extrakte Bereinigte Extrakte Extrakte ... Operative Datenbestände Produktion Technik Vertrieb Personal F&E Beschaffung ... Filterung Harmonisierung Aggregation Dimensions- Hierarchisierung Anreicherung Berechnung betriebs- wirtschaftlicher Kenngrößen Datenzugriffe Datenzugriffe Datenzugriffe Metadaten über rollenspezifische Benutzer- Profile, Verantwortlichkeiten, ... Metadaten über generierte betriebswirtschaftliche;
 
-f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.64C.2 les Dokumentations- und Steuerungswerkzeug von BIA-Anwendungssystemen dar. Sie erleichtert die Navigation und stellt detaillierte Informationen über Systemkomponenten sowie Prozesse zur Verfügung. Insbes. schafft sie für den Anwender Klarheit darüber, aus welchen Quellen Daten zusammengesetzt werden, welche fachlichen Kennzahlen ver - wendet werden und wie diese Kennzahlen aus fachlicher Perspektive zu interpretieren sind (Kemper und Finger 2016, S. 144). Metadaten können nach den folgenden Nutzungskategorien unterschieden werden (Staudt et al. 2004, S. 328 f.; Kemper 1999, S. 223): • Passive Metadaten ermöglichen eine konsistente Dokumentation der Struktur, des Entwicklungsprozesses und der Datenverwendung in einem BIA- Anwendungssystem. Potenzielle Nutzer sind alle Akteure im BIA-Umfeld, wie z. B. Endbenutzer, System - administratoren oder Systementwickler. 6 Als erste und einfachste Variante von Metadatenverwaltungssystemen wurden Systemkataloge in;       """,
-        "hallucinations": [
-  {
-    "start": 32,
-    "end": 145,
-    "text": "Metadaten sind allgemein Informationsdaten,",
-    "explanation": "Der Ausdruck 'Informationsdaten' ist ungenau und nicht im Kontexttext belegt. Im Kontext werden Metadaten als 'Informationen' beschrieben, nicht als 'Informationsdaten'. Zudem ist die Formulierung etwas vereinfacht im Vergleich zur präzisen Definition im Kontexttext.",
-    "confidence": 0.3
-  },
-  {
-    "start": 203,
-    "end": 257,
-    "text": "Metadaten können nach Art und Herkunft unterschieden werden.",
-    "explanation": "Im Kontext werden Metadaten nach Nutzungskategorien unterschieden (z. B. passive, (semi-)aktive, technische, fachliche Metadaten), nicht nach 'Art und Herkunft'. Die genannte Unterscheidung ist daher nicht korrekt belegt.",
-    "confidence": 0.8
-  },
-  {
-    "start": 537,
-    "end": 623,
-    "text": "Weitere Arten von Metadaten sind (semi-)aktive Metadaten, die Strukturinformationen und Transformationsregeln enthalten und direkt überprüft oder zur unmittelbaren Ausführung von Transformations- oder Analyseprozessen genutzt werden können.",
-    "explanation": "Im Kontext wird unterschieden zwischen semi-aktiven (Überprüfung von Strukturen) und aktiven Metadaten (Ausführung von Prozessen). Die Aussage im Antworttext vermischt beide Typen und stellt sie gemeinsam als '(semi-)aktive' dar, was unpräzise ist.",
-    "confidence": 0.5
-  },
-  {
-    "start": 772,
-    "end": 929,
-    "text": "fachliche Metadaten die Schichten der Harmonisierung, Aggregation, Anreicherung und die Berechtigungsverwaltung fokussieren.",
-    "explanation": "Im Kontext steht explizit, dass technische Metadaten sich auf die Transformationsschicht 1 (Filterungsschicht) beziehen, während fachliche Metadaten die Schichten 2 bis 4 (Harmonisierung, Aggregation, Anreicherung) sowie die Berechtigungsverwaltung betreffen. Die Antworttextformulierung lässt die Nummerierung der Schichten und den Begriff 'Filterungsschicht' aus, wodurch eine leichte Unschärfe entsteht.",
-    "confidence": 0.4
-  },
-  {
-    "start": 1033,
-    "end": 1242,
-    "text": "Metadaten dienen zur Effizienzsteigerung der Entwicklung und des Betriebs von BIA-Anwendungssystemen und erleichtern die Navigation und stellen detaillierte Informationen über Systemkomponenten sowie Prozesse zur Verfügung.",
-    "explanation": "Der erste Teil ('dienen zur Effizienzsteigerung ...') ist korrekt laut Kontext. Der zweite Teil ('erleichtern die Navigation und stellen detaillierte Informationen ... zur Verfügung') stammt aus einem anderen Abschnitt (S.64C.2) und wird korrekt wiedergegeben, aber leicht verkürzt; daher ist die inhaltliche Korrektheit grundsätzlich gegeben, jedoch nicht vollständig im Wortlaut des Originals wiedergegeben.",
-    "confidence": 0.2
-  }
-]
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.66) 44 • (Semi-)aktive Metadaten enthalten Strukturinformationen und Transformationsregeln und werden als integrale Bestandteile der entscheidungsunterstützenden Datenhal - tungssysteme abgelegt. Diese Informationen können zu einer direkten (auch software- gestützten) Überprüfung von Strukturen herangezogen (semi-aktive Metadaten) bzw. von Werkzeugen zur Laufzeit interpretiert und zur unmittelbaren Ausführung von Transformations- oder Analyseprozessen genutzt werden (aktive Metadaten). 
+Des Weiteren lassen sich technische und fachliche Metadaten differenzieren. Techni- sche Metadaten konzentrieren sich auf IT-orientierte Aspekte der Transformationsschicht 1 (Filterungsschicht), während fachliche Metadaten die Schichten 2 bis 4 (Harmonisierung, Aggregation, Anreicherung) und die Berechtigungsverwaltung fokussieren (Kemper 1999, S. 224). Die Erzeugung und das Management der Metadaten dienen 
+• der Effizienzsteigerung der Entwicklung und des Betriebs von BIA-Anwendungssyste- men sowie;
+
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.64) les Dokumentations- und Steuerungswerkzeug von BIA-Anwendungssystemen dar. Sie erleichtert die Navigation und stellt detaillierte Informationen über Systemkomponenten sowie Prozesse zur Verfügung. Insbes. schafft sie für den Anwender Klarheit darüber, aus welchen Quellen Daten zusammengesetzt werden, welche fachlichen Kennzahlen ver - wendet werden und wie diese Kennzahlen aus fachlicher Perspektive zu interpretieren sind (Kemper und Finger 2016, S. 144). 
+Metadaten können nach den folgenden Nutzungskategorien unterschieden werden (Staudt et al. 2004, S. 328 f.; Kemper 1999, S. 223): 
+• Passive Metadaten ermöglichen eine konsistente Dokumentation der Struktur, des Entwicklungsprozesses und der Datenverwendung in einem BIA- Anwendungssystem. Potenzielle Nutzer sind alle Akteure im BIA-Umfeld, wie z. B. Endbenutzer, System - administratoren oder Systementwickler. 6 Als erste und einfachste Variante von Metadatenverwaltungssystemen wurden Systemkataloge in;       """,
+      "hallucinations": [
+            {
+              "start": 32,
+              "end": 145,
+              "text": "Metadaten sind allgemein Informationsdaten,",
+              "explanation": "Der Ausdruck 'Informationsdaten' ist ungenau und nicht im Kontexttext belegt. Im Kontext werden Metadaten als 'Informationen' beschrieben, nicht als 'Informationsdaten'. Zudem ist die Formulierung etwas vereinfacht im Vergleich zur präzisen Definition im Kontexttext.",
+              "confidence": 0.3
+            },
+            {
+              "start": 203,
+              "end": 257,
+              "text": "Metadaten können nach Art und Herkunft unterschieden werden.",
+              "explanation": "Im Kontext werden Metadaten nach Nutzungskategorien unterschieden (z. B. passive, (semi-)aktive, technische, fachliche Metadaten), nicht nach 'Art und Herkunft'. Die genannte Unterscheidung ist daher nicht korrekt belegt.",
+              "confidence": 0.8
+            },
+            {
+              "start": 537,
+              "end": 623,
+              "text": "Weitere Arten von Metadaten sind (semi-)aktive Metadaten, die Strukturinformationen und Transformationsregeln enthalten und direkt überprüft oder zur unmittelbaren Ausführung von Transformations- oder Analyseprozessen genutzt werden können.",
+              "explanation": "Im Kontext wird unterschieden zwischen semi-aktiven (Überprüfung von Strukturen) und aktiven Metadaten (Ausführung von Prozessen). Die Aussage im Antworttext vermischt beide Typen und stellt sie gemeinsam als '(semi-)aktive' dar, was unpräzise ist.",
+              "confidence": 0.5
+            },
+            {
+              "start": 772,
+              "end": 929,
+              "text": "fachliche Metadaten die Schichten der Harmonisierung, Aggregation, Anreicherung und die Berechtigungsverwaltung fokussieren.",
+              "explanation": "Im Kontext steht explizit, dass technische Metadaten sich auf die Transformationsschicht 1 (Filterungsschicht) beziehen, während fachliche Metadaten die Schichten 2 bis 4 (Harmonisierung, Aggregation, Anreicherung) sowie die Berechtigungsverwaltung betreffen. Die Antworttextformulierung lässt die Nummerierung der Schichten und den Begriff 'Filterungsschicht' aus, wodurch eine leichte Unschärfe entsteht.",
+              "confidence": 0.4
+            },
+            {
+              "start": 1033,
+              "end": 1242,
+              "text": "Metadaten dienen zur Effizienzsteigerung der Entwicklung und des Betriebs von BIA-Anwendungssystemen und erleichtern die Navigation und stellen detaillierte Informationen über Systemkomponenten sowie Prozesse zur Verfügung.",
+              "explanation": "Der erste Teil ('dienen zur Effizienzsteigerung ...') ist korrekt laut Kontext. Der zweite Teil ('erleichtern die Navigation und stellen detaillierte Informationen ... zur Verfügung') stammt aus einem anderen Abschnitt (S.64C.2) und wird korrekt wiedergegeben, aber leicht verkürzt; daher ist die inhaltliche Korrektheit grundsätzlich gegeben, jedoch nicht vollständig im Wortlaut des Originals wiedergegeben.",
+              "confidence": 0.2
+            }
+          ],
+          "halucinations_token": []
 
     },
 
-{
+{       "id": 6,
         "prompt": "Im ETL-Prozess eines Data Warehouses wird von unterschiedlichen Datenmängeln gesprochen. Kannst du mir erklären, was diese Begriffe bedeuten und wie sich die verschiedenen Klassen der Mängel unterscheiden?",
         "answer": """In einem ETL (Extract, Transform, Load) Prozess eines Data Warehouses werden verschiedene Arten von Datenmängeln gesprochen. Diese Mängel können syntaktische und semantische Fehler sein, die in den extrahierten Daten vorhanden sind.
 
@@ -430,40 +449,29 @@ Die verschiedenen Klassen der Mängel unterscheiden sich in der Art der Defekter
 
 Im Falle, dass die Berichtigung der operativen Quellsysteme nicht sofort erfolgen kann, wird die Bereinigung der semantischen Fehler in der Filterungsschicht des Data Warehouse vorzunehmen.
   """,
-        "context": """ f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.49C.0
-28 (Staging Areas) des Data Warehouse eingestellt. In modernen DWH-Umgebungen wer - den die dabei extrahierten Daten teilweise parallel noch in einem
-sog. Staging Memory  oder Corporate Memory archiviert, um später bei Bedarf die Herkunft von DWH-Daten  reproduzieren zu können. Die Bereinigung dient
-der Befreiung der extrahierten Daten sowohl von syntaktischen  als auch von semantischen Mängeln. Unter syntaktischen Mängeln  sind hierbei formelle
-Mängel der code-technischen  Darstellung zu verstehen. Semantische Mängel  betreffen dagegen Mängel in den be - triebswirtschaftlichen Inhalten der
-Daten. In diesem Zusammenhang können mehrere Klassen von Mängeln identifiziert werden: • 1. Klasse: Automatisierbare Defekterkennung mit
-automatisierbarer Korrektur wäh - rend des Extraktionsvorganges. • 2. Klasse: Automatisierbare Defekterkennung mit manueller Korrektur nach dem Ex -
-traktionsvorgang. • 3.  Klasse:  Manuelle Defekterkennung mit manueller Korrektur nach dem Extrakti - onsvorgang.;     
+        "context": """ Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf S.50
+28 (Staging Areas) des Data Warehouse eingestellt. In modernen DWH-Umgebungen werden die dabei extrahierten Daten teilweise parallel noch in einem sog. Staging Memory  oder Corporate Memory archiviert, um später bei Bedarf die Herkunft von DWH-Daten  reproduzieren zu können. Die Bereinigung dient der Befreiung der extrahierten Daten sowohl von syntaktischen  als auch von semantischen Mängeln. Unter syntaktischen Mängeln  sind hierbei formelle Mängel der codetechnischen  Darstellung zu verstehen. Semantische Mängel  betreffen dagegen Mängel in den betriebswirtschaftlichen Inhalten der Daten. In diesem Zusammenhang können mehrere Klassen von Mängeln identifiziert werden: 
+• 1. Klasse: Automatisierbare Defekterkennung mit automatisierbarer Korrektur während des Extraktionsvorganges. 
+• 2. Klasse: Automatisierbare Defekterkennung mit manueller Korrektur nach dem Extraktionsvorgang. 
+• 3.  Klasse:  Manuelle Defekterkennung mit manueller Korrektur nach dem Extrakti - onsvorgang.;  
 
-f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.51C.0
-30 Mängel der 2. wie auch der 3. Klasse erschweren insbes. die Realisierung von Lösun - gen, die auf eine zeitnahe Datenbereitstellung ausgelegt sind
-(Real-time Data Warehousing,  vgl. Abschn. 3.2.3). Ein Ansatz, trotz manueller Aktivitäten noch eine angemessene Da - tenbefüllung sicherzustellen,
-ist der Einsatz von Workflow-Management-Systemen, mit  denen die notwendigen Korrekturprozesse strukturiert, verfolgt und analysiert werden  können
-(Bartel et al. 2000). Weiterhin können die beschriebenen Datentransformationen werkzeugseitig durch sog.  Cleansing-and-Scrubbing-Komponenten
-unterstützt werden, die üblicherweise ein  Bündel von Algorithmen zur Datenbereinigung bereitstellen. Im Mittelpunkt stehen Ver - fahren zur
-Fehlererkennung, Fehlerkorrektur, Syntaxabgleichung sowie zur Dublettener - kennung und -eliminierung. 2.3.1.2  Harmonisierung Die Harmonisierung
-stellt die zweite Schicht der Transformation dar. Im Gegensatz zur;
 
-f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.50C.3
-immer automatisiert erkennbar. Die manuelle Identifikation von Mängeln ist deshalb nur  für semantische Mängel erforderlich (vgl. Abb. 2.8). Beispiele
-sind unkorrekte Datenwerte  in den extrahierten Daten, die nicht durch Plausibilitätsprüfungen, einfache Wertebereichs- prüfungen oder Verfahren der
-Mustererkennung identifiziert, sondern lediglich von be - triebswirtschaftlichen Fachexperten erkannt werden können. Bei diesen semantischen  Mängeln
-handelt es sich ebenfalls stets um Fehler in den operativen Datenquellen. Diese  sind wie oben beschrieben zu behandeln. Kann also aufgrund
-individueller  Rahmenbedingen  eine Berichtigung der operativen Quellsysteme nicht (sofort) erfolgen, ist eine Bereinigung  der semantischen Fehler in
-der Filterungsschicht des Data Warehouse vorzunehmen. 2.3 Detaillierung ODS-erweiterter Data Warehouses;
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf(S.52)
+30 Mängel der 2. wie auch der 3. Klasse erschweren insbes. die Realisierung von Lösun - gen, die auf eine zeitnahe Datenbereitstellung ausgelegt sind(Real-time Data Warehousing,  vgl. Abschn. 3.2.3). Ein Ansatz, trotz manueller Aktivitäten noch eine angemessene Da - tenbefüllung sicherzustellen, ist der Einsatz von Workflow-Management-Systemen, mit  denen die notwendigen Korrekturprozesse strukturiert, verfolgt und analysiert werden können(Bartel et al. 2000). 
+Weiterhin können die beschriebenen Datentransformationen werkzeugseitig durch sog.  Cleansing-and-Scrubbing-Komponenten unterstützt werden, die üblicherweise ein  Bündel von Algorithmen zur Datenbereinigung bereitstellen. Im Mittelpunkt stehen Verfahren zur Fehlererkennung, Fehlerkorrektur, Syntaxabgleichung sowie zur Dublettenerkennung und -eliminierung. 
+2.3.1.2  Harmonisierung 
+Die Harmonisierung stellt die zweite Schicht der Transformation dar. Im Gegensatz zur;
 
-f:\bachelorarbeit db\bi\978-3-8348-2344-1.pdf:S.49C.1
-• 2. Klasse: Automatisierbare Defekterkennung mit manueller Korrektur nach dem Ex - traktionsvorgang. • 3.  Klasse:  Manuelle Defekterkennung mit
-manueller Korrektur nach dem Extrakti - onsvorgang. Jede dieser Klassen erfordert eine besondere V orgehensweise der Bereinigung. Mängel der 1. Klasse
-Die syntaktischen und semantischen Mängel der 1. Klasse können durch implementierte  Transformationsregeln automatisiert behoben werden, da sie
-bereits vor der Erstellung der  Extraktionsroutinen bekannt sind bzw. ihr Auftreten antizipiert werden kann. So gehören zu dieser Klasse syntaktische
-Mängel, die durch interne Format-, Steuer-  oder Sonderzeichen bewirkt und in operativen Systemen – z. B. zur Dokumentation von  Stornobuchungen –
-herangezogen werden. Diese Mängel lassen sich während des Extrak- tionsvorgangs identifizieren und über Zuordnungstabellen ( Mapping Tables) in den Ex
-- traktdaten bearbeiten. Ein Beispiel für die automatisierte Bereinigung eines semantischen Mangels sind feh-;""",
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.51)
+immer automatisiert erkennbar. Die manuelle Identifikation von Mängeln ist deshalb nur für semantische Mängel erforderlich (vgl. Abb. 2.8). Beispiele sind unkorrekte Datenwerte  in den extrahierten Daten, die nicht durch Plausibilitätsprüfungen, einfache Wertebereichs- prüfungen oder Verfahren der Mustererkennung identifiziert, sondern lediglich von be - triebswirtschaftlichen Fachexperten erkannt werden können. Bei diesen semantischen  Mängeln handelt es sich ebenfalls stets um Fehler in den operativen Datenquellen. Diese  sind wie oben beschrieben zu behandeln. Kann also aufgrund individueller  Rahmenbedingen  eine Berichtigung der operativen Quellsysteme nicht (sofort) erfolgen, ist eine Bereinigung  der semantischen Fehler in der Filterungsschicht des Data Warehouse vorzunehmen.
+
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.50)
+• 2. Klasse: Automatisierbare Defekterkennung mit manueller Korrektur nach dem Extraktionsvorgang. 
+• 3.  Klasse:  Manuelle Defekterkennung mit manueller Korrektur nach dem Extraktionsvorgang. 
+Jede dieser Klassen erfordert eine besondere Vorgehensweise der Bereinigung. 
+Mängel der 1. Klasse
+Die syntaktischen und semantischen Mängel der 1. Klasse können durch implementierte  Transformationsregeln automatisiert behoben werden, da sie bereits vor der Erstellung der  Extraktionsroutinen bekannt sind bzw. ihr Auftreten antizipiert werden kann. So gehören zu dieser Klasse syntaktische Mängel, die durch interne Format-, Steuer-  oder Sonderzeichen bewirkt und in operativen Systemen – z. B. zur Dokumentation von  Stornobuchungen – herangezogen werden. Diese Mängel lassen sich während des Extrak- tionsvorgangs identifizieren und über Zuordnungstabellen ( Mapping Tables) in den Extraktdaten bearbeiten. Ein Beispiel für die automatisierte Bereinigung eines semantischen Mangels sind feh-;
+""",
         "hallucinations": [
                 {
                   "start": 206,
@@ -493,11 +501,12 @@ herangezogen werden. Diese Mängel lassen sich während des Extrak- tionsvorgang
                   "explanation": "Der Antworttext stellt dies als allgemeingültige Definition für *alle* semantischen Fehler dar. Der Kontexttext (S. 50) führt dies jedoch als Eigenschaft eines *Beispiels* für semantische Mängel an, die eine manuelle Identifikation erfordern (3. Klasse). Laut Kontext (S. 49) gibt es aber auch semantische Mängel der 1. Klasse, die automatisiert erkannt und behoben werden. Die Aussage ist somit eine falsche Verallgemeinerung.",
                   "confidence": 1.0
                 }
-        ]
+        ],
+        "halucinations_token": []
 
     },
 
-{
+{       "id": 7,
         "prompt": "Was sind Metadaten und wie unterscheiden sich die unterschiedlichen Arten von Metadaten",
         "answer": """In the contemporary landscape of higher education, the integration of Artificial Intelligence (AI) has emerged as a significant catalyst, promising transformative potential in various academic processes. According to Vargas-Murillo et a
 l. (2023), AI-assisted learning can enhance evaluation methods for educators, revolutionize text creation and processing for students and researchers, and streamline academic-related processes for librarians (S.7C.2). This is further substantiated by the work of Roy et al. (2025), who have explored the use of generative AI tools in software engineering education, demonstrating their potential to empower future engineers by integrating these tools into advanced curricula (S.0C.7).    
@@ -570,14 +579,16 @@ l. (2023), AI-assisted learning can enhance evaluation methods for educators, re
     "text": "Vargas-M urillo, et al. (2023). Challenges and Opportunities of AI-Assisted Learning: A Systematic Literature Review on the Impact in Digital Education. Journal of Digital Education, 22(1), 1-20.",
     "explanation": "Der Kontext enthält zwar die Vargas-Murillo-Studie (als PDF/SLR), liefert aber nicht die angegebenen Publikationsdetails (\"Journal of Digital Education, 22(1), 1-20\"). Diese vollständige Referenzangabe ist im Kontext nicht belegt und daher sehr wahrscheinlich erfunden."
   }
-]
+],
+        "halucinations_token": []
 
     },
-    {
+    {   "id": 8,
         "prompt": "",
         "answer": """  """,
         "context": """ """,
-        "hallucinations": []
+        "hallucinations": [],
+        "halucinations_token": []
 
 
     }
