@@ -960,6 +960,81 @@ In conclusion, while AI presents significant opportunities for enhancing educati
   {"token": "}", "prob": 0.0}
 ]
       },
+      {       "id": 5,
+        "prompt": "Im ETL-Prozess eines Data Warehouses wird von unterschiedlichen Datenmängeln gesprochen. Kannst du mir erklären, was diese Begriffe bedeuten und wie sich die verschiedenen Klassen der Mängel unterscheiden?",
+        "answer": """In einem ETL (Extract, Transform, Load) Prozess eines Data Warehouses werden verschiedene Arten von Datenmängeln gesprochen. Diese Mängel können syntaktische und semantische Fehler sein, die in den extrahierten Daten vorhanden sind.
+
+1. Syntaktische Fehler sind Fehler in der formalen Darstellung der Daten. Sie entstehen durch irreguläre Zeichen, ungültige Verbindungen, oder ungültige Werte in den extrahierten Daten. Sie können durch implementierte Transformationsregeln automatisiert behoben werden, da sie bekannt sind oder ihr Auftreten antizipiert werden kann. Beispiel: Syntaktische Fehler durch interne Format- oder Steuerzeichen.
+
+2. Semantische Fehler sind Fehler in den inhaltlichen Inhalten der Daten. Sie betreffen Mängel in der Bedeutung der Daten, die durch Plausibilitätsprüfungen, einfache Wertebereichs-prüfungen oder Verfahren der Mustererkennung nicht identifiziert werden können und nur von Fachexperten erkannt werden können. Beispiel: Unkorrekte Datenwerte in den extrahierten Daten.
+
+Die verschiedenen Klassen der Mängel unterscheiden sich in der Art der Defekterkennung und Korrektur, die erforderlich ist:
+
+- 1. Klasse: Automatisierbare Defekterkennung mit automatisierbarer Korrektur während des Extraktionsvorganges. Diese Mängel können bereits vor der Erstellung der Extraktionsroutinen bekannt sein und können automatisiert behoben werden.  
+
+- 2. Klasse: Automatisierbare Defekterkennung mit manueller Korrektur nach dem Extraktionsvorgang. Diese Mängel können automatisch erkannt werden, jedoch müssen sie manuell korrigiert werden.
+
+- 3. Klasse: Manuelle Defekterkennung mit manueller Korrektur nach dem Extraktionsvorgang. Diese Mängel können nur manuell erkannt und korrigiert werden, da sie nur von Fachexperten erkannt werden können.
+
+Im Falle, dass die Berichtigung der operativen Quellsysteme nicht sofort erfolgen kann, wird die Bereinigung der semantischen Fehler in der Filterungsschicht des Data Warehouse vorzunehmen.
+  """,
+        "context": """ Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf S.50
+28 (Staging Areas) des Data Warehouse eingestellt. In modernen DWH-Umgebungen werden die dabei extrahierten Daten teilweise parallel noch in einem sog. Staging Memory  oder Corporate Memory archiviert, um später bei Bedarf die Herkunft von DWH-Daten  reproduzieren zu können. Die Bereinigung dient der Befreiung der extrahierten Daten sowohl von syntaktischen  als auch von semantischen Mängeln. Unter syntaktischen Mängeln  sind hierbei formelle Mängel der codetechnischen  Darstellung zu verstehen. Semantische Mängel  betreffen dagegen Mängel in den betriebswirtschaftlichen Inhalten der Daten. In diesem Zusammenhang können mehrere Klassen von Mängeln identifiziert werden: 
+• 1. Klasse: Automatisierbare Defekterkennung mit automatisierbarer Korrektur während des Extraktionsvorganges. 
+• 2. Klasse: Automatisierbare Defekterkennung mit manueller Korrektur nach dem Extraktionsvorgang. 
+• 3.  Klasse:  Manuelle Defekterkennung mit manueller Korrektur nach dem Extrakti - onsvorgang.;  
+
+
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf(S.52)
+30 Mängel der 2. wie auch der 3. Klasse erschweren insbes. die Realisierung von Lösun - gen, die auf eine zeitnahe Datenbereitstellung ausgelegt sind(Real-time Data Warehousing,  vgl. Abschn. 3.2.3). Ein Ansatz, trotz manueller Aktivitäten noch eine angemessene Da - tenbefüllung sicherzustellen, ist der Einsatz von Workflow-Management-Systemen, mit  denen die notwendigen Korrekturprozesse strukturiert, verfolgt und analysiert werden können(Bartel et al. 2000). 
+Weiterhin können die beschriebenen Datentransformationen werkzeugseitig durch sog.  Cleansing-and-Scrubbing-Komponenten unterstützt werden, die üblicherweise ein  Bündel von Algorithmen zur Datenbereinigung bereitstellen. Im Mittelpunkt stehen Verfahren zur Fehlererkennung, Fehlerkorrektur, Syntaxabgleichung sowie zur Dublettenerkennung und -eliminierung. 
+2.3.1.2  Harmonisierung 
+Die Harmonisierung stellt die zweite Schicht der Transformation dar. Im Gegensatz zur;
+
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.51)
+immer automatisiert erkennbar. Die manuelle Identifikation von Mängeln ist deshalb nur für semantische Mängel erforderlich (vgl. Abb. 2.8). Beispiele sind unkorrekte Datenwerte  in den extrahierten Daten, die nicht durch Plausibilitätsprüfungen, einfache Wertebereichs- prüfungen oder Verfahren der Mustererkennung identifiziert, sondern lediglich von be - triebswirtschaftlichen Fachexperten erkannt werden können. Bei diesen semantischen  Mängeln handelt es sich ebenfalls stets um Fehler in den operativen Datenquellen. Diese  sind wie oben beschrieben zu behandeln. Kann also aufgrund individueller  Rahmenbedingen  eine Berichtigung der operativen Quellsysteme nicht (sofort) erfolgen, ist eine Bereinigung  der semantischen Fehler in der Filterungsschicht des Data Warehouse vorzunehmen.
+
+Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.50)
+• 2. Klasse: Automatisierbare Defekterkennung mit manueller Korrektur nach dem Extraktionsvorgang. 
+• 3.  Klasse:  Manuelle Defekterkennung mit manueller Korrektur nach dem Extraktionsvorgang. 
+Jede dieser Klassen erfordert eine besondere Vorgehensweise der Bereinigung. 
+Mängel der 1. Klasse
+Die syntaktischen und semantischen Mängel der 1. Klasse können durch implementierte  Transformationsregeln automatisiert behoben werden, da sie bereits vor der Erstellung der  Extraktionsroutinen bekannt sind bzw. ihr Auftreten antizipiert werden kann. So gehören zu dieser Klasse syntaktische Mängel, die durch interne Format-, Steuer-  oder Sonderzeichen bewirkt und in operativen Systemen – z. B. zur Dokumentation von  Stornobuchungen – herangezogen werden. Diese Mängel lassen sich während des Extrak- tionsvorgangs identifizieren und über Zuordnungstabellen ( Mapping Tables) in den Extraktdaten bearbeiten. Ein Beispiel für die automatisierte Bereinigung eines semantischen Mangels sind feh-;
+""",
+        "hallucinations": [
+                {
+                  "start": 206,
+                  "end": 222,
+                  "text": "ungültige Werte",
+                  "explanation": "Der Kontexttext (S. 50) nennt 'unkorrekte Datenwerte' explizit als Beispiel für einen *semantischen* Mangel, nicht für einen syntaktischen. Die Zuordnung im Antworttext ist daher irreführend und potenziell falsch.",
+                  "confidence": 1.0
+                },
+                {
+                  "start": 250,
+                  "end": 372,
+                  "text": "Sie können durch implementierte Transformationsregeln automatisiert behoben werden, da sie bekannt sind oder ihr Auftreten antizipiert werden kann.",
+                  "explanation": "Diese Aussage wird im Antworttext pauschal für alle syntaktischen Fehler getroffen. Laut Kontexttext (S. 49) ist dies jedoch die Definition für 'Mängel der 1. Klasse', welche sowohl syntaktische als auch semantische Mängel umfassen. Es ist eine unzulässige Verallgemeinerung, da nicht alle syntaktischen Fehler zwingend zur 1. Klasse gehören müssen.",
+                  "confidence": 0.8
+                },
+                {
+                  "start": 382,
+                  "end": 441,
+                  "text": "Syntaktische Fehler durch interne Format- oder Steuerzeichen.",
+                  "explanation": "Das Zitat aus dem Kontexttext (S. 49) ist unvollständig. Im Originaltext heisst es 'interne Format-, Steuer- oder Sonderzeichen'. Das Weglassen der 'Sonderzeichen' macht die Aussage ungenau.",
+                  "confidence": 0.3
+                },
+                {
+                  "start": 532,
+                  "end": 695,
+                  "text": "die durch Plausibilitätsprüfungen, einfache Wertebereichs-prüfungen oder Verfahren der Mustererkennung nicht identifiziert werden können und nur von Fachexperten erkannt werden können.",
+                  "explanation": "Der Antworttext stellt dies als allgemeingültige Definition für *alle* semantischen Fehler dar. Der Kontexttext (S. 50) führt dies jedoch als Eigenschaft eines *Beispiels* für semantische Mängel an, die eine manuelle Identifikation erfordern (3. Klasse). Laut Kontext (S. 49) gibt es aber auch semantische Mängel der 1. Klasse, die automatisiert erkannt und behoben werden. Die Aussage ist somit eine falsche Verallgemeinerung.",
+                  "confidence": 1.0
+                }
+        ],
+        "halucinations_token": []
+
+    },
+
     {   "id": 6,
         "prompt": "For a seminar paper in the course “Digitalization and AI” write an analytical text discussing the ethical risks of using artificial intelligence in higher education teaching. Identify and critically examine what is considerd to be the three most significant ethical risks. Support your analysis with relevant academic literature and credible sources." ,
         "context":""" Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf (S.9) 
