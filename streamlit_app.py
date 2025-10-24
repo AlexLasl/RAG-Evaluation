@@ -56,7 +56,7 @@ def render_token(tokens_with_probs: list[dict]) -> str:
             conf = item["prob"]  # Wahrscheinlichkeit, dass Token halluziniert ist
 
             # Farbcodierung je nach Schwellenwert
-            if conf > 0.8:
+            if conf > 0.7:
                 color = "rgba(255, 77, 77, 0.3)"   # Rot = stark halluziniert
             elif conf > 0.4:
                 color = "rgba(255, 166, 77, 0.3)"  # Orange = unsicher
@@ -96,8 +96,10 @@ Diese Demo zeigt simulierte Antworten eines RAG-Chatbots.
 
     # Antwort anzeigen
     st.subheader("💬 Antwort des Chatbots")
-    if ex["id"] == 4:
-        rendered = ex["halucinations_token"]
+    if ex["id"] <= 2:
+        rendered = ex["answer"]
+    elif ex["id"] <= 4:
+        rendered = render_token(ex["halucinations_token"])
     else:
         rendered = render_hallucinations(ex["answer"], ex["hallucinations"])
     st.markdown(rendered, unsafe_allow_html=True)
