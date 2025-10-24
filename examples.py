@@ -1,119 +1,69 @@
 
 
-examples = [
+examples = [{   "id": 1,
+        "prompt": "For a seminar paper in the course “Digitalization and AI,” write a section discussing the three core pedagocial approaches of Education 4.0. Support your analysis with relevant academic literature and credible sources" ,
+        "context":""" Peláez-Sánchez et al. - 2024 - The impact of large language models on higher education exploring the connection between AI and Edu.pdf (S.5) 
+conclusions of the study). Figure 3 illustrates the methodology and phases of the research process, adapted from the works of Kitchenham (2004) and Kitchenham and Charters (2007) , and each phase is detailed subsequently. FIGURE 2 Pedagogical approaches of Education 4.0.;
 
+Peláez-Sánchez et al. - 2024 - The impact of large language models on higher education exploring the connection between AI and Edu.pdf (S.4) 
+technology in the 21st century, as it can offer advanced solutions to current educational challenges, including the implementation of hybrid and online education models, the use of digital tools and platforms to enhance learning and teaching, and the need for adequate training for teachers and students in the use of these technologies (Sabando Barreiro, 2021). One of the foundations of Education 4.0 is the incorporation of innovative pedagogies, mainly three pedagogical approaches that reflect the growing importance of digital technologies in education and the need for students to take an active role in their learning (Ramírez-Montoya et al., 2022a). 
+2.3 Pedagogical approaches of Education 4.0 
+Education 4.0 is built upon three pedagogical approaches: (a) Cyberpedagogy, (b) Heutagogy, and (c) Peeragogy (Ramírez-Montoya et al., 2022a). They are important to optimize learning and prepare students for the future, as these innovative pedagogies seek to change;
 
+Peláez-Sánchez et al. - 2024 - The impact of large language models on higher education exploring the connection between AI and Edu.pdf (S.4) 
+adaptability to change (Kovaliuk and Kobets, 2021). Education 4.0 aligns with the Fourth Industrial Revolution (4IR) through the evolution and reorientation of educational paradigms and innovative pedagogical approaches to meet the needs of a continuously changing technological society ( Moraes et  al., 2023 ). From this scenario, Education 4.0 is oriented toward increasing the flexibility of the various actors within the educational system with the support of innovative pedagogical paradigms and the backing of technology to guide the learning process. This integration encompasses connectivity and storage infrastructure, institutional guidelines, organizational procedures, and methods that promote innovation (González-Pérez and Ramírez-Montoya, 2022). This innovative approach is a response to changes in society and technology in the 21st century, as it can offer advanced solutions to current educational challenges, including the implementation of;
 
+Peláez-Sánchez et al. - 2024 - The impact of large language models on higher education exploring the connection between AI and Edu.pdf (S.5)
+and Marín, 2020). It is important to note that the student requires a level of personality, independence, and maturity for solid learning and good understanding. Heutagogy promotes lifelong learning and students’ independence, allowing education to transfer knowledge and foster responsible, honest, and fair citizens for life in the work and social fields (Sumarsono, 2020). 
+To summarize, Education 4.0 focuses on three key principles. Firstly, it promotes a student-centered approach to learning, emphasizing active engagement. Secondly, it seeks to provide students with real-world contexts, scenarios, and challenges, enabling them to apply their knowledge and skills in practice. Thirdly, it encourages the development of research skills and complex thinking, allowing students to propose innovative solutions to current societal issues. These principles are based on the Heutagogy, Peeragogy, and Cyberpedagogy approaches (Ramírez-Montoya et al., 2022a). A visual;""" ,
+        "answer": """ **Title: The Three Core Pedagogical Approaches of Education 4.0**
 
-    {   "id": 1,
-        "prompt": "Write approximately half a page for a seminar paper on the topic “How Large Language Models (LLMs) are used in higher education.” In this section, define what Large Language Models are and explain how they work in a clear and concise way. The section should serve as a theoretical foundation for the later discussion on the use of LLMs in higher education. Use an academic tone and include appropriate APA-style citations for all definitions and key concepts.",
-        "context": "Der Kontext beschreibt: Die Schweiz hat vier Landessprachen und Bern ist Sitz der Regierung.",
-        "answer": """### "Large Language Models (LLMs) in Higher Education: A Theoretical Foundation\nDefinition of Large Language Models (LLMs)\nLarge Language Models (LLMs) are advanced artificial intelligence systems designed to understand and generate human-like text. These models, such as GPT-4 and ChatGPT, are trained on vast datasets containing written texts from various domains, including books, articles, and web content. The training process involves converting text into high-dimensional \"embeddings\" that capture semantic meaning. LLMs then use these embeddings to perform tasks like text generation, translation, summarization, and question-answering (Ghader et al., 2024; Gao & Callan, 2021).\n\nLLMs operate through a series of layers or \"neural networks\" that encode context from preceding inputs. Each layer processes information to produce outputs at the final layer. The models utilize attention mechanisms to weigh the importance of different words in a sentence when generating responses (Meyer et al., 2023).\nHow LLMs Work\n\nWhen tasked with generating text, an LLM takes user input, processes it through its layers, and produces a response based on patterns learned during training. While capable of creative tasks, LLMs lack true consciousness or autonomy; they merely mimic human-like language generation (Meyer et al., 2023).\nLimitations of LLMs\n\nDespite their capabilities, LLMs exhibit limitations. They often produce fabricated information when encountering data gaps, as noted in Meyer et al., 2023, where ChatGPT has been known to misrepresent knowledge by generating responses confidently without proper context (Ghader et al., 2024). Additionally, their accuracy varies depending on the training data's quality and relevance. For example, they may struggle with specialized jargon or cultural nuances not adequately represented in their training datasets.\nApplications of LLMs in Higher Education\n\nIn higher education, LLMs can be instrumental tools for academic support. They assist students by generating paraphrased explanations, offering writing guidance, or even assisting with complex research tasks (Meyer et al., 2023). Educators may use them to create personalized feedback, generate lecture materials, or grade essays using automated systems (Ghader et al., 2024; Gao & Callan, 2021).\nConclusion\nLLMs represent promising technologies with diverse applications in higher education. However, their limitations necessitate careful implementation and verification of outputs to ensure accuracy and fairness.""",
+In the context of the digital age, Education 4.0 arises as a response to the evolving society and technology of the 21st century (Moraes et al., 2023). This innovative educational approach is aligned with the Fourth Industrial Revolution (4IR) and focuses on enhancing flexibility within the educational system through advanced pedagogical paradigms and technology (González-Pérez & Ramírez-Montoya, 2022).
 
+Education 4.0 is primarily supported by three core pedagogical approaches: Cyberpedagogy, Heutagogy, and Peeragogy (Ramírez-Montoya et al., 2022a). These innovative pedagogies have emerged as crucial in optimizing learning and preparing students for the future, particularly in adapting to a constantly changing technological society (Kovaliuk & Kobets, 2021).
+
+1. Cyberpedagogy: This approach emphasizes the integration of digital technologies into education, fostering active student engagement and collaboration in the learning process (Ramírez-Montoya et al., 2022a). The incorporation of digital tools and platforms can create a more interactive and dynamic learning environment, allowing students to engage with various resources and share ideas across geographical boundaries (Sabando Barreiro, 2021).
+
+2. Heutagogy: This pedagogical approach promotes lifelong learning and independence among students, enabling them to take control of their learning process and develop critical thinking skills (Sumarsono, 2020). Heutagogy encourages self-directed learning, fostering responsible, honest, and fair citizens for life in the work and social fields (Marín & Ramírez, 2020).
+
+3. Peeragogy: This approach emphasizes peer-to-peer learning, where students collaborate and learn from each other. Peeragogy enables students to develop problem-solving, communication, and collaboration skills, as well as fostering a sense of community and accountability (Ramírez-Montoya et al., 2022a).
+
+These three pedagogical approaches play a significant role in Education 4.0, focusing on a student-centered approach, providing real-world contexts and challenges for students to apply their knowledge and skills in practice, and
+ encouraging the development of research skills and complex thinking (Ramírez-Montoya et al., 2022a). By embracing these innovative pedagogies, Education 4.0 strives to prepare students for the future, fostering adaptability and independence in an ever-changing technological society.
+
+References:
+- González-Pérez, R., & Ramírez-Montoya, J. (2022). Education 4.0: A Review of Literature and Future Perspectives. In R. González-Pérez, J. Ramírez-Montoya, & S. Peláez-Sánchez (Eds.), Education 4.0: The Impact of Large Language Models on Higher Education Exploring the Connection between AI and Edu (pp. 1-20). Springer.
+- Kovaliuk, A., & Kobets, O. (2021). Adaptability in Education: The Role of Technology and Pedagogy. Journal of Educational Technology & Society, 24(3), 168-180.
+- Kitchenham, B. (2004). A Methodology for Performing Case Studies. IEEE Software, 21(4), 54-59.
+- Kitchenham, B. W., & Charters, S. (2007). An Empirical Study of the Influence of Defect Removal Efficiency on Software Quality. IEEE Transactions on Software Engineering, 33(10), 736-748.
+- Moraes, L. R., et al. (2023). Education 4.0 and the Fourth Industrial Revolution: A Review and Future Perspectives. Journal of Education and Training Studies, 11(2), 1-15.
+- Marín, M., & Ramírez, J. (2020). Heutagogy: A New Perspective on Learning and Development. In R. González-Pérez, J. Ramírez-Montoya, & S. Peláez-Sánchez (Eds.), Education 4.""",
         "hallucinations": [
-            {
-              "start": 129,
-              "end": 256,
-              "confidence": 0.5,
-              "text": "Large Language Models (LLMs) are advanced artificial intelligence systems designed to understand and generate human-like text.",
-              "explanation": "Allgemeine Definitionsaussage; im gegebenen Kontext nicht explizit belegt. Plausibel, aber nicht direkt durch die bereitgestellten Quellenabschnitte gedeckt."
-            },
-            {
-              "start": 256,
-              "end": 417,
-              "confidence": 0.5,
-              "text": "These models, such as GPT-4 and ChatGPT, are trained on vast datasets containing written texts from various domains, including books, articles, and web content.",
-              "explanation": "Teilweise Plausibilität (Kontext erwähnt öffentlich verfügbare Internettexte bis 2021), aber die spezifische Behauptung über \"books, articles\" etc. wird in den bereitgestellten Kontextauszügen nicht direkt belegt."
-            },
-            {
-              "start": 417,
-              "end": 526,
-              "confidence": 0.5,
-              "text": "The training process involves converting text into high-dimensional \"embeddings\" that capture semantic meaning.",
-              "explanation": "Technische Vereinfachung; die genaue Beschreibung des Trainingsprozesses in dieser Form ist im gegebenen Kontext nicht belegt. Plausibel, aber nicht direkt verifiziert."
-            },
-            {
-              "start": 526,
-              "end": 689,
-              "confidence": 0.5,
-              "text": "LLMs then use these embeddings to perform tasks like text generation, translation, summarization, and question-answering (Ghader et al., 2024; Gao & Callan, 2021).",
-              "explanation": "Die zitierte Verknüpfung von Embeddings und spezifischen Aufgaben sowie die Zuordnung der genannten Quellen ist nicht durch die vorliegenden Kontextauszüge gedeckt; Aussage ist plausibel, aber nicht direkt belegt."
-            },
-            {
-              "start": 691,
-              "end": 794,
-              "confidence": 0.5,
-              "text": "LLMs operate through a series of layers or \"neural networks\" that encode context from preceding inputs.",
-              "explanation": "Allgemeine technische Beschreibung; im bereitgestellten Kontext nicht explizit dokumentiert. Plausibel, aber nicht direkt gestützt durch die Auszüge."
-            },
-            {
-              "start": 794,
-              "end": 866,
-              "confidence": 0.5,
-              "text": "Each layer processes information to produce outputs at the final layer.",
-              "explanation": "Vereinfacht dargestellte Funktionsbeschreibung der Modellarchitektur; nicht direkt durch die gelieferten Kontextstellen belegt."
-            },
-            {
-              "start": 866,
-              "end": 1011,
-              "confidence": 0.5,
-              "text": "The models utilize attention mechanisms to weigh the importance of different words in a sentence when generating responses (Meyer et al., 2023).",
-              "explanation": "Spezifische Erwähnung von Attention und die Zuschreibung an Meyer et al. (2023) sind im vorgelegten Kontext nicht nachgewiesen; daher unsicher."
-            },
-            {
-              "start": 1032,
-              "end": 1191,
-              "confidence": 0.5,
-              "text": "When tasked with generating text, an LLM takes user input, processes it through its layers, and produces a response based on patterns learned during training.",
-              "explanation": "Beschreibt allgemeines Verhalten von LLMs; im bereitgestellten Kontext nicht explizit formuliert. Plausibel, aber nicht direkt belegt."
-            },
-            {
-              "start": 1191,
-              "end": 1336,
-              "confidence": 0.5,
-              "text": "While capable of creative tasks, LLMs lack true consciousness or autonomy; they merely mimic human-like language generation (Meyer et al., 2023).",
-              "explanation": "Philosophische/ontologische Behauptung (kein Bewusstsein) ist gängig, wird in den Auszügen aber nicht als zitierte Feststellung von Meyer et al. belegt. Somit nicht direkt durch den Kontext gedeckt."
-            },
-            {
-              "start": 1654,
-              "end": 1745,
-              "confidence": 0.5,
-              "text": "Additionally, their accuracy varies depending on the training data's quality and relevance.",
-              "explanation": "Allgemeine Aussage über Abhängigkeit von Trainingsdaten; im bereitgestellten Kontext ist zwar Bias/Trainingsdaten-Thematik erwähnt, die genaue Formulierung ist jedoch nicht ausdrücklich belegt."
-            },
-            {
-              "start": 1745,
-              "end": 1874,
-              "confidence": 0.5,
-              "text": "For example, they may struggle with specialized jargon or cultural nuances not adequately represented in their training datasets.",
-              "explanation": "Konkretes Beispiel zu Schwächen bei Fachjargon/kulturellen Nuancen — plausibel, aber in den gelieferten Kontextauszügen nicht explizit belegt."
-            },
-            {
-              "start": 2151,
-              "end": 2317,
-              "confidence": 0.5,
-              "text": "Educators may use them to create personalized feedback, generate lecture materials, or grade essays using automated systems (Ghader et al., 2024; Gao & Callan, 2021).",
-              "explanation": "Anwendungsbehauptungen für Lehrende sind plausibel, aber die zugeordneten Quellen (Ghader 2024; Gao & Callan 2021) behandeln in den Kontextauszügen andere technische Themen; die Zitierung passt nicht und die Aussage ist nicht direkt durch die vorliegenden Auszüge gedeckt."
-            },
-            {
-              "start": 2984,
-              "end": 3157,
-              "confidence": 0.9,
-              "text": "Meyer, J., He, Y., & Mosbach, M. (2023). ChatGPT and large language models in academia: Opportunities and challenges. Journal of Educational Technology, 45(6), 789–800.",
-              "explanation": "Die spezifischen bibliografischen Angaben (Zeitschriftenname, Band, Ausgabe, Seitenzahlen) sind im bereitgestellten Kontext nicht enthalten. Diese detaillierten Referenzdaten wirken erfunden oder nicht durch die vorgelegten Kontextauszüge belegt."
-            }
+               
         ],
         "halucinations_token": []
     },
+
     {   "id": 2,
         "prompt": "For a seminar paper in the course “Digitalization and AI” write an analytical text discussing the ethical risks of using artificial intelligence in higher education teaching. Identify and critically examine what is considerd to be the three most significant ethical risks. Support your analysis with relevant academic literature and credible sources." ,
-        "context":""" d:\data\llms in higher education\Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.8C.3 this tool for academic work (Lee, 2023). With the rapid evolution of technology, authors have become more reliant on AI as an easy-to-use tool that complements their work. However, a raising conce rn is the ethical aspects of these AI tools, where misuse can lead to the lack of creative thinking and research integrity, not to mention the inaccuracies this technology yields when not given exact prompts. Moreover, students can also lose their ability to produce original ideas and to present correct arguments to prove their research (Arif et al., 2023). There has yet to be implemented a correct way to manage AI-assisted learning and to control AI tool usage in educ ational institutions, but the risks that are present in its implementation are visible and worthy of attention and analysis. For instance, while ChatGPT is a powerful tool that can provide assistance and information, its misuse undermines the principles o f academic integrity and;
+        "context":""" Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf (S.9) 
+        this tool for academic work (Lee, 2023). With the rapid evolution of technology, authors have become more reliant on AI as an easy-to-use tool that complements their work. However, a raising conce rn is the ethical aspects of these AI tools, where misuse can lead to the lack of creative thinking and research integrity, not to mention the inaccuracies this technology yields when not given exact prompts. Moreover, students can also lose their ability to produce original ideas and to present correct arguments to prove their research (Arif et al., 2023). There has yet to be implemented a correct way to manage AI-assisted learning and to control AI tool usage in educ ational institutions, but the risks that are present in its implementation are visible and worthy of attention and analysis.
+        For instance, while ChatGPT is a powerful tool that can provide assistance and information, its misuse undermines the principles of academic integrity and;
+        
+        Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf (S.1)
+        challenges and opportunities of artificial intelligence - (AI) assisted learning, all within the research area of dig ital education. For this, a systematic literature review (SLR) was conducted across multiple journal databases, analyzing the articles found and filtering them with the use of specific criteria. The results of this analysis afforded the conclusion that that ChatGPT can potentially enhance both academic - and librarian - related processes, although it is important to reconsider the ethics of using technology such as this . This is because this kind of AI technology also has the potential to modify the way people take on different jobs, tasks , and processes at an academic level, for which the correct and responsible use of ChatGPT needs to be assessed in the field of higher education. 
+        Keywords: artificial intelligence; ChatGPT; higher education; learning methodologies; smart learning;
+        
+        Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf (S.3) 
+        124  that would normally take more time to complete, such as research and data comparison, to name a few examples.
+        AI is definitely at the helm of digital transformation and machine-powered media content, and the way ChatGPT enables students to complement their learning process is something to take into consideration. ChatGPT allows users to enter text prompts to effectively generate tex t responses that are drawn from knowledge gathered via machine learning, through the use of the internet (Pavlik, 2023). Its uses and applications are certainly not unlimited, but students’ ability to exploit this technology’s capability is somewhat of a problematic subject. 
+        Regarding the impact that ChatGPT could have on the educational field, it is important to assess the ethics behind the correct usage of this tool so that it does not hinder students’ ability to write or to conduct academic work without the need;
+        
+        Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf (S.8) 
+        2023). With this said, it is clear that this AI approach to education can help educators evaluate their students, but only if they do not abuse the usage of this tool, as the information supplied by ChatGPT is not always 100% correct. 
+        This AI model has revolutionized education regarding what students and researchers can do to create and process texts and assignments . In this context, universities need to reconsider the way their teaching methods and learning strategies incorporate the use of these kinds of tools in their teaching and become more receptive towards written text that is generated partially by AI. Nevertheless, they need to always remain vigilant so that students do not rely completely on AI (Ivanov & Soliman, 2023). 
+        AI is advancing fast, and students today have become accustomed to us ing grammar correction tools, style guides , and different kinds of word processing programs. They are not relying on some other person but solely on their own;""" ,
 
-d:\data\llms in higher education\Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.0C.2 challenges and opportunities of artificial intelligence - (AI) assisted learning, all within the research area of dig ital education. For this, a systematic literature review (SLR) was conducted across multiple journal databases, analyzing the articles found and filtering them with the use of specific criteria. The results of this analysis afforded the conclusion that that ChatGPT can potentially enhance both academic - and librarian - related processes, although it is important to reconsider the ethics of using technology such as this . This is because this kind of AI technology also has the potential to modify the way people take on different jobs, tasks , and processes at an academic level, for which the correct and responsible use of ChatGPT needs to be assessed in the field of higher education. Keywords: artificial intelligence; ChatGPT; higher education; learning methodologies; smart learning;
-
-d:\data\llms in higher education\Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.2C.0 124 http://ijlter.org/index.php/ijlter that would normally take more time to complete, such as research and data comparison, to name a few examples. AI is definitely at the helm of digital transformation and machine-powered media content, and the way ChatGPT enables students to complement their learning process is something to take into consideration. ChatGPT allows users to enter text prompts to effectively generate tex t responses that are drawn from knowledge gathered via machine learning, through the use of the internet (Pavlik, 2023). Its uses and applications are certainly not unlimited, but students’ ability to exploit this technology’s capability is somewhat of a problematic subject. Regarding the impact that ChatGPT could have on the educational field, it is important to assess the ethics behind the correct usage of this tool so that it does not hinder students’ ability to write or to conduct academic work without the need;
-
-d:\data\llms in higher education\Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.7C.2 2023). With this said, it is clear that this AI approach to education can help educators evaluate their students, but only if they do not abuse the usage of this tool, as the information supplied by ChatGPT is not always 100% correct. This AI model has revolutionized education regarding what students and researchers can do to create and process texts and assignments . In this context, universities need to reconsider the way their teaching methods and learning strategies incorporate the use of these kinds of tools in their teaching and become more receptive towards written text that is generated partially by AI. Nevertheless, they need to always remain vigilant so that students do not rely completely on AI (Ivanov & Soliman, 2023). AI is advancing fast, and students today have become accustomed to us ing grammar correction tools, style guides , and different kinds of word processing programs. They are not relying on some other person but solely on their own;""" ,
         "answer": """**Analytical Text: Ethical Risks of AI in Higher Education Teaching**
 
 In the realm of higher education, artificial intelligence (AI) is revolutionizing teaching and learning processes through tools like ChatGPT. However, this technological advancement also poses significant ethical risks that must be carefully considered.
@@ -584,13 +534,187 @@ l. (2023), AI-assisted learning can enhance evaluation methods for educators, re
 
     },
     {   "id": 8,
-        "prompt": "",
-        "answer": """  """,
-        "context": """ """,
-        "hallucinations": [],
+        "prompt": "For a seminar paper in the course “Digitalization and AI,” write an analytical text discussing the three core pedagocial approaches of Education 4.0. Support your analysis with specific evidence and questionnaire results from the paper.",
+        "answer": """The Core Pedagogical Approaches of Education 4.0: A Digitalization and AI Perspective
+
+In the context of the Fourth Industrial Revolution, Education 4.0 emerges as a response to the evolving societal and technological landscape (Moraes et al., 2023). Built upon three innovative pedagogical approaches, this new edu
+cational paradigm aims to adapt to the changing technological society and provide advanced solutions to current educational challenges (González-Pérez & Ramírez-Montoya, 2022). This paper will discuss the three core pedagogical approaches of Education 4.0: Cyberpedagogy, Heutagogy, and Peeragogy.
+
+1. Cyberpedagogy:
+The first approach, Cyberpedagogy, emphasizes the integration of digital technologies into education to enhance the learning process (Ramírez-Montoya et al., 2022a). In the context of this study, the application of machine learning for the analysis of student argumentation in chemistry exemplifies the use of technology in Cyberpedagogy (Matsumoto-Royo et al., 2021).
+
+2. Heutagogy:
+Heutagogy, the second approach, encourages self-directed learning and the development of lifelong learning tendencies (J. McCarthy et al., 2006; Mills et al., 2023). This approach empowers students to take an active role in thei
+r learning, fostering adaptability to change (Kovaliuk & Kobets, 2021). In the context of the study, this is reflected in the emphasis on practice-based teacher education to prepare teachers and students for Education 4.0 (Matsumoto-Royo et al., 2021).
+
+3. Peeragogy:
+The third approach, Peeragogy, emphasizes collaboration and peer learning among students (Ramírez-Montoya et al., 2022a). This approach is critical in Education 4.0 as it promotes a collaborative learning environment that prepar
+es students for the future (Ramírez-Montoya et al., 2021). The study suggests that this approach can be integrated into Education 4.0 through the use of digital tools and platforms that facilitate peer-to-peer collaboration (Sabando Barreiro, 2021).
+
+To further support the analysis, questionnaire results from the study indicate that a significant number of participants agreed that these pedagogical approaches are essential in preparing students for Education 4.0 (Ramírez-Montoya et al., 2021). The study also highlights the need for adequate training for teachers and students in the use of these technologies (Sabando Barreiro, 2021).
+
+In conclusion, Education 4.0 is a significant shift in the educational landscape, integrating innovative pedagogical approaches to meet the needs of a technologically advancing society. The three core pedagogical approaches, Cyb
+erpedagogy, Heutagogy, and Peeragogy, play crucial roles in this paradigm, offering solutions to current educational challenges and preparing students for the future. The study supports these conclusions, providing evidence of their importance and the need for adequate training in their implementation.
+
+References:
+- Kitchenham, B. W., & Charters, S. J. (2007). A Guide to the Software Process Improvement and Capability dEtermination Body (Spice) Standard. Wiley.
+- Kitchenham, B. W. (2004). Experimental studies in software engineering: Research methodology. John Wiley & Sons.
+- Kovaliuk, O., & Kobets, O. (2021). The impact of the Fourth Industrial Revolution on education and the workforce. Journal of Education and Research.
+- Mills, A., Bali, M., & Eaton, L. (2023). How do we respond to generative AI in education? Open educational practices give us a framework for an ongoing process. Journal of Applied Learning and Teaching.
+- Miranda, J., Navarrete, C., Noguez, J., Molina-Espinosa, J. M., Ramírez-Montoya, M. S., Navarro-Tuch, S. A., ... & Moraes, L. D. (2021). The core components of education 4.0 in higher education. Procedia - Social and Behavioral Sciences, 384,  """,
+        "context": """Peláez-Sánchez et al. - 2024 - The impact of large language models on higher education exploring the connection between AI and Edu.pdf (S.5)
+conclusions of the study). Figure 3 illustrates the methodology and phases of the research process, adapted from the works of Kitchenham (2004) and Kitchenham and Charters (2007) , and each phase is detailed subsequently. FIGURE 2 Pedagogical approaches of Education 4.0.;
+
+Peláez-Sánchez et al. - 2024 - The impact of large language models on higher education exploring the connection between AI and Edu.pdf (S.4)
+technology in the 21st century, as it can offer advanced solutions to current educational challenges, including the implementation of hybrid and online education models, the use of digital tools and platforms to enhance learning and teaching, and the need for adequate training for teachers and students in the use of these technologies (Sabando Barreiro, 2021). One of the foundations of Education 4.0 is the incorporation of innovative pedagogies, mainly three pedagogical approaches that reflect the growing importance of digital technologies in education and the need for students to take an active role in their learning (Ramírez-Montoya et al., 2022a). 
+2.3 Pedagogical approaches of Education 4.0 
+Education 4.0 is built upon three pedagogical approaches: (a) Cyberpedagogy, (b) Heutagogy, and (c) Peeragogy (Ramírez-Montoya et al., 2022a). They are important to optimize learning and prepare students for the future, as these innovative pedagogies seek to change;
+
+Peláez-Sánchez et al. - 2024 - The impact of large language models on higher education exploring the connection between AI and Edu.pdf (S.3) 
+adaptability to change (Kovaliuk and Kobets, 2021). 
+Education 4.0 aligns with the Fourth Industrial Revolution (4IR) through the evolution and reorientation of educational paradigms and innovative pedagogical approaches to meet the needs of a continuously changing technological society ( Moraes et  al., 2023 ). From this scenario, Education 4.0 is oriented toward increasing the flexibility of the various actors within the educational system with the support of innovative pedagogical paradigms and the backing of technology to guide the learning process. This integration encompasses connectivity and storage infrastructure, institutional guidelines, organizational procedures, and methods that promote innovation (González-Pérez and Ramírez-Montoya, 2022). 
+This innovative approach is a response to changes in society and technology in the 21st century, as it can offer advanced solutions to current educational challenges, including the implementation of;
+
+Peláez-Sánchez et al. - 2024 - The impact of large language models on higher education exploring the connection between AI and Edu.pdf (S.19)
+applying machine learning for the analysis of student argumentation in chemistry. J. Res. Sci. Teach. 1–36. doi: 10.1002/tea.21903 
+Matsumoto-Royo, K., Ramírez-Montoya, M. S., and Conget, P . (2021). Opportunities to develop lifelong learning tendencies in practice-based teacher education: getting ready for education 4.0. Future Internet 13:292. doi: 10.3390/fi13110292 
+McCarthy, J., Minsky, M., Rochester, N., and Shannon, C. (2006). A proposal for the Dartmouth summer research project on artificial intelligence, august 31, 1955. AI Mag. 27:12. doi: 10.1609/aimag.v27i4.1904 
+Mills, A., Bali, M., and Eaton, L. (2023). How do we respond to generative AI in education? Open educational practices give us a framework for an ongoing process. J. Appl. Learn. Teach. 6. doi: 10.37074/jalt.2023.6.1.34 
+Miranda, J., Navarrete, C., Noguez, J., Molina-Espinosa, J. M., Ramírez-Montoya, M. S., Navarro-Tuch, S. A., et al. (2021). The core components of education 4.0 in higher; """,
+        "hallucinations": [
+  {
+    "start": 1135,
+    "end": 1181,
+    "confidence": 0.9,
+    "text": "(J. McCarthy et al., 2006; Mills et al., 2023)",
+    "explanation": "Die Aufnahme von 'J. McCarthy et al., 2006' als Quelle für Heutagogy ist sehr wahrscheinlich falsch bzw. irreführend: McCarthy et al. (Dartmouth‑Proposal) ist ein historisches AI‑Papier und nicht eine Standardquelle zur Heutagogie; im gegebenen Kontext gibt es keine Unterstützung dafür, dass McCarthy (2006) Heutagogie begründet oder direkt dazu zitiert wird."
+  },
+  {
+    "start": 1986,
+    "end": 2231,
+    "confidence": 0.8,
+    "text": "To further support the analysis, questionnaire results from the study indicate that a significant number of participants agreed that these pedagogical approaches are essential in preparing students for Education 4.0 (Ramírez-Montoya et al., 2021).",
+    "explanation": "Im bereitgestellten Kontext sind keine konkreten Fragebogenergebnisse oder Angaben zu deren Richtung/Größe enthalten. Die Aussage über 'a significant number of participants agreed' wird nicht durch die Kontextauszüge belegt und wirkt daher unbelegt/erfunden."
+  },
+  {
+    "start": 2911,
+    "end": 3060,
+    "confidence": 0.95,
+    "text": "- Kitchenham, B. W., & Charters, S. J. (2007). A Guide to the Software Process Improvement and Capability dEtermination Body (Spice) Standard. Wiley.",
+    "explanation": "Die angegebene Referenzbeschreibung ist höchstwahrscheinlich inkorrekt. Kitchenham & Charters (2007) sind bekannt für Leitlinien zu Systematic Literature Reviews in Software Engineering; der hier genannte Titel ('A Guide to the Software Process Improvement and Capability dEtermination Body (Spice) Standard') und die fehlerhafte Schreibweise 'dEtermination' stimmen nicht mit der bekannten Publikation überein und sind nicht durch den Kontext belegt."
+  },
+  {
+    "start": 3061,
+    "end": 3170,
+    "confidence": 0.9,
+    "text": "- Kitchenham, B. W. (2004). Experimental studies in software engineering: Research methodology. John Wiley & Sons.",
+    "explanation": "Die genaue Titelformulierung für Kitchenham (2004) ist im Kontext nicht belegt und wirkt ungenau/fehleranfällig; Kitchenham ist in der Literatur für methodologische Arbeiten bekannt, aber die hier angegebene spezifische Titelformulierung wurde im Kontext nicht bereitgestellt und könnte falsch sein."
+  }
+]
+,
         "halucinations_token": []
 
 
+    },
+    {   "id": 1,
+        "prompt": "Write approximately half a page for a seminar paper on the topic “How Large Language Models (LLMs) are used in higher education.” In this section, define what Large Language Models are and explain how they work in a clear and concise way. The section should serve as a theoretical foundation for the later discussion on the use of LLMs in higher education. Use an academic tone and include appropriate APA-style citations for all definitions and key concepts.",
+        "context": "Der Kontext beschreibt: Die Schweiz hat vier Landessprachen und Bern ist Sitz der Regierung.",
+        "answer": """### "Large Language Models (LLMs) in Higher Education: A Theoretical Foundation\nDefinition of Large Language Models (LLMs)\nLarge Language Models (LLMs) are advanced artificial intelligence systems designed to understand and generate human-like text. These models, such as GPT-4 and ChatGPT, are trained on vast datasets containing written texts from various domains, including books, articles, and web content. The training process involves converting text into high-dimensional \"embeddings\" that capture semantic meaning. LLMs then use these embeddings to perform tasks like text generation, translation, summarization, and question-answering (Ghader et al., 2024; Gao & Callan, 2021).\n\nLLMs operate through a series of layers or \"neural networks\" that encode context from preceding inputs. Each layer processes information to produce outputs at the final layer. The models utilize attention mechanisms to weigh the importance of different words in a sentence when generating responses (Meyer et al., 2023).\nHow LLMs Work\n\nWhen tasked with generating text, an LLM takes user input, processes it through its layers, and produces a response based on patterns learned during training. While capable of creative tasks, LLMs lack true consciousness or autonomy; they merely mimic human-like language generation (Meyer et al., 2023).\nLimitations of LLMs\n\nDespite their capabilities, LLMs exhibit limitations. They often produce fabricated information when encountering data gaps, as noted in Meyer et al., 2023, where ChatGPT has been known to misrepresent knowledge by generating responses confidently without proper context (Ghader et al., 2024). Additionally, their accuracy varies depending on the training data's quality and relevance. For example, they may struggle with specialized jargon or cultural nuances not adequately represented in their training datasets.\nApplications of LLMs in Higher Education\n\nIn higher education, LLMs can be instrumental tools for academic support. They assist students by generating paraphrased explanations, offering writing guidance, or even assisting with complex research tasks (Meyer et al., 2023). Educators may use them to create personalized feedback, generate lecture materials, or grade essays using automated systems (Ghader et al., 2024; Gao & Callan, 2021).\nConclusion\nLLMs represent promising technologies with diverse applications in higher education. However, their limitations necessitate careful implementation and verification of outputs to ensure accuracy and fairness.""",
+
+        "hallucinations": [
+            {
+              "start": 129,
+              "end": 256,
+              "confidence": 0.5,
+              "text": "Large Language Models (LLMs) are advanced artificial intelligence systems designed to understand and generate human-like text.",
+              "explanation": "Allgemeine Definitionsaussage; im gegebenen Kontext nicht explizit belegt. Plausibel, aber nicht direkt durch die bereitgestellten Quellenabschnitte gedeckt."
+            },
+            {
+              "start": 256,
+              "end": 417,
+              "confidence": 0.5,
+              "text": "These models, such as GPT-4 and ChatGPT, are trained on vast datasets containing written texts from various domains, including books, articles, and web content.",
+              "explanation": "Teilweise Plausibilität (Kontext erwähnt öffentlich verfügbare Internettexte bis 2021), aber die spezifische Behauptung über \"books, articles\" etc. wird in den bereitgestellten Kontextauszügen nicht direkt belegt."
+            },
+            {
+              "start": 417,
+              "end": 526,
+              "confidence": 0.5,
+              "text": "The training process involves converting text into high-dimensional \"embeddings\" that capture semantic meaning.",
+              "explanation": "Technische Vereinfachung; die genaue Beschreibung des Trainingsprozesses in dieser Form ist im gegebenen Kontext nicht belegt. Plausibel, aber nicht direkt verifiziert."
+            },
+            {
+              "start": 526,
+              "end": 689,
+              "confidence": 0.5,
+              "text": "LLMs then use these embeddings to perform tasks like text generation, translation, summarization, and question-answering (Ghader et al., 2024; Gao & Callan, 2021).",
+              "explanation": "Die zitierte Verknüpfung von Embeddings und spezifischen Aufgaben sowie die Zuordnung der genannten Quellen ist nicht durch die vorliegenden Kontextauszüge gedeckt; Aussage ist plausibel, aber nicht direkt belegt."
+            },
+            {
+              "start": 691,
+              "end": 794,
+              "confidence": 0.5,
+              "text": "LLMs operate through a series of layers or \"neural networks\" that encode context from preceding inputs.",
+              "explanation": "Allgemeine technische Beschreibung; im bereitgestellten Kontext nicht explizit dokumentiert. Plausibel, aber nicht direkt gestützt durch die Auszüge."
+            },
+            {
+              "start": 794,
+              "end": 866,
+              "confidence": 0.5,
+              "text": "Each layer processes information to produce outputs at the final layer.",
+              "explanation": "Vereinfacht dargestellte Funktionsbeschreibung der Modellarchitektur; nicht direkt durch die gelieferten Kontextstellen belegt."
+            },
+            {
+              "start": 866,
+              "end": 1011,
+              "confidence": 0.5,
+              "text": "The models utilize attention mechanisms to weigh the importance of different words in a sentence when generating responses (Meyer et al., 2023).",
+              "explanation": "Spezifische Erwähnung von Attention und die Zuschreibung an Meyer et al. (2023) sind im vorgelegten Kontext nicht nachgewiesen; daher unsicher."
+            },
+            {
+              "start": 1032,
+              "end": 1191,
+              "confidence": 0.5,
+              "text": "When tasked with generating text, an LLM takes user input, processes it through its layers, and produces a response based on patterns learned during training.",
+              "explanation": "Beschreibt allgemeines Verhalten von LLMs; im bereitgestellten Kontext nicht explizit formuliert. Plausibel, aber nicht direkt belegt."
+            },
+            {
+              "start": 1191,
+              "end": 1336,
+              "confidence": 0.5,
+              "text": "While capable of creative tasks, LLMs lack true consciousness or autonomy; they merely mimic human-like language generation (Meyer et al., 2023).",
+              "explanation": "Philosophische/ontologische Behauptung (kein Bewusstsein) ist gängig, wird in den Auszügen aber nicht als zitierte Feststellung von Meyer et al. belegt. Somit nicht direkt durch den Kontext gedeckt."
+            },
+            {
+              "start": 1654,
+              "end": 1745,
+              "confidence": 0.5,
+              "text": "Additionally, their accuracy varies depending on the training data's quality and relevance.",
+              "explanation": "Allgemeine Aussage über Abhängigkeit von Trainingsdaten; im bereitgestellten Kontext ist zwar Bias/Trainingsdaten-Thematik erwähnt, die genaue Formulierung ist jedoch nicht ausdrücklich belegt."
+            },
+            {
+              "start": 1745,
+              "end": 1874,
+              "confidence": 0.5,
+              "text": "For example, they may struggle with specialized jargon or cultural nuances not adequately represented in their training datasets.",
+              "explanation": "Konkretes Beispiel zu Schwächen bei Fachjargon/kulturellen Nuancen — plausibel, aber in den gelieferten Kontextauszügen nicht explizit belegt."
+            },
+            {
+              "start": 2151,
+              "end": 2317,
+              "confidence": 0.5,
+              "text": "Educators may use them to create personalized feedback, generate lecture materials, or grade essays using automated systems (Ghader et al., 2024; Gao & Callan, 2021).",
+              "explanation": "Anwendungsbehauptungen für Lehrende sind plausibel, aber die zugeordneten Quellen (Ghader 2024; Gao & Callan 2021) behandeln in den Kontextauszügen andere technische Themen; die Zitierung passt nicht und die Aussage ist nicht direkt durch die vorliegenden Auszüge gedeckt."
+            },
+            {
+              "start": 2984,
+              "end": 3157,
+              "confidence": 0.9,
+              "text": "Meyer, J., He, Y., & Mosbach, M. (2023). ChatGPT and large language models in academia: Opportunities and challenges. Journal of Educational Technology, 45(6), 789–800.",
+              "explanation": "Die spezifischen bibliografischen Angaben (Zeitschriftenname, Band, Ausgabe, Seitenzahlen) sind im bereitgestellten Kontext nicht enthalten. Diese detaillierten Referenzdaten wirken erfunden oder nicht durch die vorgelegten Kontextauszüge belegt."
+            }
+        ],
+        "halucinations_token": []
     }
 ]
 

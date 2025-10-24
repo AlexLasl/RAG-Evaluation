@@ -77,12 +77,11 @@ def render_token(tokens_with_probs: list[dict]) -> str:
 # ---------- Haupt-App ----------
 def main():
     st.set_page_config(page_title="RAG-Halluzinationen", page_icon="🤖")
-    st.title("🧠 Simulation: RAG-Chatbot mit markierten Halluzinationen")
+    st.title("RAG-Chabot evaluation")
 
     st.markdown("""
 Diese Demo zeigt simulierte Antworten eines RAG-Chatbots.  
-**Einige Antworten enthalten Halluzinationen**, die farbig markiert sind.  
-Fahre mit der Maus über markierte Textstellen, um Details zu sehen.
+
     """)
 
     # Zustand verwalten
