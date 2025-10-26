@@ -330,13 +330,12 @@ Metadaten können nach den folgenden Nutzungskategorien unterschieden werden (St
   {"token": " gespeichert", "prob": 0.9},
   {"token": ".", "prob": 0.0},
   {"token": " Metadaten", "prob": 0.0},
-  {"token": " können", "prob": 0.0},
-  {"token": " nach", "prob": 0.0},
-  {"token": " Art", "prob": 0.5},
-  {"token": " und", "prob": 0.0},
-  {"token": " Herkunft", "prob": 0.85},
-  {"token": " unterschieden", "prob": 0.2},
-  {"token": " werden", "prob": 0.0},
+  {"token": " werden", "prob": 0.6},
+  {"token": " nach", "prob": 0.3},
+  {"token": " Art", "prob": 0.7},
+  {"token": " und", "prob": 0.3},
+  {"token": " Herkunft", "prob": 0.8},
+  {"token": " unterschieden", "prob": 0.4},
   {"token": ". \n \n", "prob": 0.0},
   {"token": " Es", "prob": 0.3},
   {"token": " gibt", "prob": 0.0},
@@ -428,7 +427,7 @@ Metadaten können nach den folgenden Nutzungskategorien unterschieden werden (St
   {"token": " fachliche", "prob": 0.0},
   {"token": " Metadaten", "prob": 0.0},
   {"token": " die", "prob": 0.0},
-  {"token": " Schichten", "prob": 0.2},
+  {"token": " Schichten", "prob": 0.4},
   {"token": " der", "prob": 0.0},
   {"token": " Harmonisierung", "prob": 0.3},
   {"token": ",", "prob": 0.0},
@@ -437,7 +436,7 @@ Metadaten können nach den folgenden Nutzungskategorien unterschieden werden (St
   {"token": " Anreicherung", "prob": 0.2},
   {"token": " und", "prob": 0.0},
   {"token": " die", "prob": 0.0},
-  {"token": " Berechtigungsverwaltung", "prob": 0.4},
+  {"token": " Berechtigungsverwaltung", "prob": 0.5},
   {"token": " fokussieren", "prob": 0.2},
   {"token": ".", "prob": 0.0},
   {"token": " Metadaten", "prob": 0.0},
@@ -475,13 +474,8 @@ Metadaten können nach den folgenden Nutzungskategorien unterschieden werden (St
     {   "id": 4,
         "prompt": "For a seminar paper in the course “Digitalization an AI” write an analytical text discussing the opportunities and positive impacts of using artificial intelligence in higher education teaching. Identify and critically examine what you consider to be the three most significant opportunities. Support your analysis with relevant academic literature and credible sources.",
         "context": """Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.0C.2
-challenges and opportunities of  artificial intelligence - (AI) assisted  learning, all within the research area of dig ital education. For this, a
-systematic literature review (SLR) was conducted across multiple journal  databases, analyzing the articles found and filtering them with the use of
-specific criteria. The results of this analysis afforded the conclusion that   that ChatGPT can potentially enhance both academic - and librarian -
-related processes, although it is important to reconsider the ethics of using  technology such as this . This is because  this kind of AI technology
-also  has the potential to modify the way people take on different jobs, tasks ,  and processes at an academic level, for which the correct and
-responsible  use of ChatGPT needs to be assessed in the field of higher education.      Keywords: artificial intelligence; ChatGPT; higher education;
-learning  methodologies; smart learning;
+challenges and opportunities of  artificial intelligence - (AI) assisted  learning, all within the research area of dig ital education. For this, a systematic literature review (SLR) was conducted across multiple journal  databases, analyzing the articles found and filtering them with the use of specific criteria. The results of this analysis afforded the conclusion that   that ChatGPT can potentially enhance both academic - and librarian - related processes, although it is important to reconsider the ethics of using  technology such as this . This is because  this kind of AI technology also  has the potential to modify the way people take on different jobs, tasks ,  and processes at an academic level, for which the correct and responsible  use of ChatGPT needs to be assessed in the field of higher education.      
+Keywords: artificial intelligence; ChatGPT; higher education; learning  methodologies; smart learning;
 
 Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.7C.2
 2023). With this said, it is clear that this AI approach to education can help  educators evaluate their students, but only if they do not abuse the
@@ -493,38 +487,22 @@ Soliman, 2023).    AI is advancing fast, and students today have become accustom
 kinds of word processing  programs. They are not relying on some  other person but solely on their own;
 
 Meyer et al. - 2023 - ChatGPT and large language models in academia opportunities and challenges.pdf:S.10C.4
-tion. 2023:4. https:// doi. org/ 10. 25968/ opus‑ 2467.  23. Baidoo‑Anu D, Owusu Ansah L. Education in the Era of Generative Artificial Intelligence
-(AI): Understanding the  Potential Benefits of ChatGPT in Promoting Teaching and Learning. 2023. Available at SSRN: https:// ssrn. com/ abstr  act=
-43374 84 or https:// doi. org/ 10. 2139/ ssrn. 43374 84.  24. Trust T, Whalen J, Mouza C. Editorial: ChatGPT: Challenges, opportunities, and
-implications for teacher education.  Contemp Issues Technol Teacher Educ. 2023;23(1):1–23.  25. Dijkstra R, Genç Z, Kayal S, Kamps J. Reading
-Comprehension Quiz Generation using Generative Pre‑trained Trans‑ formers. 2022.  26. Gleason N. ChatGPT and the rise of AI writers: How should higher
-education respond. Times Higher Education  https:// www. times highe reduc ation. com/ campus/ ChatG PT‑ and‑ rise‑ ai‑ write rs‑ how‑ should‑ higher‑
-educa tion‑ respo  nd. 2022.;
+tion. 2023:4. https:// doi. org/ 10. 25968/ opus‑ 2467.  23. Baidoo‑Anu D, Owusu Ansah L. Education in the Era of Generative Artificial Intelligence (AI): Understanding the  Potential Benefits of ChatGPT in Promoting Teaching and Learning. 2023. Available at SSRN: https:// ssrn. com/ abstr  act= 43374 84 or https:// doi. org/ 10. 2139/ ssrn. 43374 84.  24. Trust T, Whalen J, Mouza C. Editorial: ChatGPT: Challenges, opportunities, and implications for teacher education.  Contemp Issues Technol Teacher Educ. 2023;23(1):1–23.  25. Dijkstra R, Genç Z, Kayal S, Kamps J. Reading Comprehension Quiz Generation using Generative Pre‑trained Trans‑ formers. 2022.  26. Gleason N. ChatGPT and the rise of AI writers: How should higher education respond. Times Higher Education  https:// www. times highe reduc ation. com/ campus/ ChatG PT‑ and‑ rise‑ ai‑ write rs‑ how‑ should‑ higher‑ educa tion‑ respo  nd. 2022.;
 
 d:\data\llms in higher education\Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.10C.4
-could only help educators and students optimize its use and lower the risks of its  usage.    Furthermore, as a new era of education is just around
-the corner, with AI-based  learning experiences growing in every corner, teachers and students need to learn  to adapt to these changes  quickly.
-However, as Kooli (2023) indicate d, the main;
+could only help educators and students optimize its use and lower the risks of its  usage.    Furthermore, as a new era of education is just around the corner, with AI-based  learning experiences growing in every corner, teachers and students need to learn  to adapt to these changes  quickly. However, as Kooli (2023) indicate d, the main;
 """,
         "answer": """**The Opportunities and Positive Impacts of Artificial Intelligence in Higher Education Teaching**
 
-In recent years, artificial intelligence (AI), particularly through tools like ChatGPT, has emerged as a transformative
- force in higher education. This technology presents multiple opportunities that can significantly enhance teaching and
- learning processes. Among these, three stand out as particularly impactful: personalized learning, efficiency in teaching, and enhanced student engagement.
+In recent years, artificial intelligence (AI), particularly through tools like ChatGPT, has emerged as a transformative force in higher education. This technology presents multiple opportunities that can significantly enhance teaching and learning processes. Among these, three stand out as particularly impactful: personalized learning, efficiency in teaching, and enhanced student engagement.
 
 **1. Personalized Learning**
 
-AI offers the potential for highly personalized learning experiences tailored to individual students' needs. By analyzi
-ng each student's performance, interests, and learning style, AI can adapt curricula and assignments to promote a more 
-engaging and effective learning environment. For instance, Vargas-Murillo et al. (2023) highlight that AI can optimize 
-learning experiences by providing customized feedback and resources. This personalized approach not only caters to dive
-rse student populations but also empowers students to take an active role in their education, fostering deeper understanding and retention.
+AI offers the potential for highly personalized learning experiences tailored to individual students' needs. By analyzing each student's performance, interests, and learning style, AI can adapt curricula and assignments to promote a more engaging and effective learning environment. For instance, Vargas-Murillo et al. (2023) highlight that AI can optimize learning experiences by providing customized feedback and resources. This personalized approach not only caters to diverse student populations but also empowers students to take an active role in their education, fostering deeper understanding and retention.
 
 **2. Efficiency in Teaching**
 
-One of the most significant opportunities lies in streamlining administrative tasks for educators. AI can automate grad
-ing, create assignments, and provide instant feedback, allowing instructors to focus more on teaching and less on repet
-itive tasks. Meyer et al. (2023) emphasize that this efficiency shift can free up educators' time, enabling them to allocate resources towards more impactful activities such as fostering critical thinking and creativity in students.      
+One of the most significant opportunities lies in streamlining administrative tasks for educators. AI can automate grading, create assignments, and provide instant feedback, allowing instructors to focus more on teaching and less on repetitive tasks. Meyer et al. (2023) emphasize that this efficiency shift can free up educators' time, enabling them to allocate resources towards more impactful activities such as fostering critical thinking and creativity in students.      
 
 **3. Enhanced Student Engagement**
 
