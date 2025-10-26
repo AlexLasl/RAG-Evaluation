@@ -79,11 +79,12 @@ def main():
     st.set_page_config(page_title="RAG-Halluzinationen", page_icon="🤖")
     st.title("RAG-Chabot evaluation")
 
-
+    ex = examples[st.session_state.index]
 
 
 
     if ex["id"] <= 2:
+       
        st.markdown("""
 Diese Demo zeigt simulierte Antworten eines RAG-Chatbots.  
 
@@ -101,7 +102,7 @@ Gelb: mit geringer Sicherheit fehlerhaft
     if "index" not in st.session_state:
         st.session_state.index = 0
 
-    ex = examples[st.session_state.index]
+    
 
     # Prompt anzeigen
     st.subheader("🗨️ Prompt")
