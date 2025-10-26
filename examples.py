@@ -472,12 +472,12 @@ Metadaten können nach den folgenden Nutzungskategorien unterschieden werden (St
 
 
     {   "id": 4,
-        "prompt": "For a seminar paper in the course “Digitalization an AI” write an analytical text discussing the opportunities and positive impacts of using artificial intelligence in higher education teaching. Identify and critically examine what you consider to be the three most significant opportunities. Support your analysis with relevant academic literature and credible sources.",
-        "context": """Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.0C.2
+        "prompt": "For a seminar paper in the course “Digitalization an AI” write an analytical text discussing the opportunities and positive impacts of using artificial intelligence in higher education teaching. Identify and critically examine what you consider to be the three most significant opportunities. Support your analysis with relevant academic literature and credible sources.**",
+        "context": """** 1: Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.0C.2
 challenges and opportunities of  artificial intelligence - (AI) assisted  learning, all within the research area of dig ital education. For this, a systematic literature review (SLR) was conducted across multiple journal  databases, analyzing the articles found and filtering them with the use of specific criteria. The results of this analysis afforded the conclusion that   that ChatGPT can potentially enhance both academic - and librarian - related processes, although it is important to reconsider the ethics of using  technology such as this . This is because  this kind of AI technology also  has the potential to modify the way people take on different jobs, tasks ,  and processes at an academic level, for which the correct and responsible  use of ChatGPT needs to be assessed in the field of higher education.      
 Keywords: artificial intelligence; ChatGPT; higher education; learning  methodologies; smart learning;
 
-Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.7C.2
+**2: Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact o.pdf:S.7C.2**
 2023). With this said, it is clear that this AI approach to education can help  educators evaluate their students, but only if they do not abuse the
 usage of this  tool, as the information supplied by ChatGPT is not always 100% correct.    This AI model has revolutionized education regarding what
 students and  researchers can do to create and process texts and assignments . In this context,  universities need to reconsider the way their

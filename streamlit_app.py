@@ -61,7 +61,7 @@ def render_token(tokens_with_probs: list[dict]) -> str:
             elif conf > 0.4:
                 color = "rgba(255, 166, 77, 0.3)"  # Orange = unsicher
             elif conf > 0.05:
-                color = "rgba(255, 255, 204, 0.3)" # gelb = eher korrekt
+                color = "rgba(255, 255, 204, 0.5)" # gelb = eher korrekt
 
             else:
                 color = "transparent"  # keine Markierung
@@ -94,10 +94,11 @@ Diese Demo zeigt simulierte Antworten eines RAG-Chatbots.
     else:
         st.markdown("""
 Die farblichen Markierungen im Text heben Passagen hervor, die von einem automatischen Erkennungssystem als potenziell fehlerhaft eingestuft wurden. Die Farbintensität gibt dabei an, wie sicher sich das System in seiner Einschätzung ist:
-Rot: mit hoher Wahrscheinlichkeit fehlerhaft
-Orange: möglicherweise fehlerhaft
-Gelb: mit geringer Sicherheit fehlerhaft
-    """)
+
+- <span style='background-color:rgba(255, 77, 77, 0.3); padding:2px 4px; border-radius:4px;'>Rot: mit hoher Sicherheit fehlerhaft</span>  
+- <span style='background-color:rgba(255, 166, 77, 0.3); padding:2px 4px; border-radius:4px;'>Orange: möglicherweise fehlerhaft</span>  
+- <span style='background-color:rgba(255, 255, 204, 0.5); padding:2px 4px; border-radius:4px;'>Gelb: mit geringer Sicherheit fehlerhaft</span>
+""", unsafe_allow_html=True)
 
 
     
