@@ -79,10 +79,23 @@ def main():
     st.set_page_config(page_title="RAG-Halluzinationen", page_icon="🤖")
     st.title("RAG-Chabot evaluation")
 
-    st.markdown("""
+
+
+
+
+    if ex["id"] <= 2:
+       st.markdown("""
 Diese Demo zeigt simulierte Antworten eines RAG-Chatbots.  
 
     """)
+    else:
+        st.markdown("""
+Die farblichen Markierungen im Text heben Passagen hervor, die von einem automatischen Erkennungssystem als potenziell fehlerhaft eingestuft wurden. Die Farbintensität gibt dabei an, wie sicher sich das System in seiner Einschätzung ist:
+Rot: mit hoher Wahrscheinlichkeit fehlerhaft
+Orange: möglicherweise fehlerhaft
+Gelb: mit geringer Sicherheit fehlerhaft
+    """)
+
 
     # Zustand verwalten
     if "index" not in st.session_state:
