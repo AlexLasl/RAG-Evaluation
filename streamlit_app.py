@@ -78,7 +78,9 @@ def render_token(tokens_with_probs: list[dict]) -> str:
 def main():
     st.set_page_config(page_title="RAG-Halluzinationen", page_icon="🤖")
     st.title("RAG-Chabot evaluation")
-
+    # Zustand verwalten
+    if "index" not in st.session_state:
+        st.session_state.index = 0
     ex = examples[st.session_state.index]
 
 
@@ -98,9 +100,7 @@ Gelb: mit geringer Sicherheit fehlerhaft
     """)
 
 
-    # Zustand verwalten
-    if "index" not in st.session_state:
-        st.session_state.index = 0
+    
 
     
 
