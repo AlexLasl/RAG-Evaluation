@@ -3,7 +3,7 @@
 examples = [
     {   "id": 1,
         "prompt": "Ich bin Student im Bereich Wirtschaftsinformatik und versuche gerade zu verstehen, was genau ein Operational Data Store (ODS) ist. Kannst du mir bitte einfach und verständlich erklären, was ein ODS ist und macht.",
-        "context": """ ** Quelle 1: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.62)**
+        "context": """ **Quelle 1: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.62)**
 (Inmon 1999, S. 12 ff.). Die einzelnen Charakteristika des ODS werden im Folgenden  erläutert: 
 • Themenorientierung 
 Die Konzeption eines ODS erfogt  – genau wie beim Data Warehouse  – anhand entscheidungsorientierter Perspektiven. Häufig verwendete Dimensionen betreffen z. B. die  Produkte, Regionen oder Kunden (vgl. Abschn. 2.2.1). 
@@ -13,7 +13,7 @@ Die im ODS enthaltenen Daten stammen aus den operativen Quellsystemen des Unter-
 Im ODS findet keine explizite Historisierung der übernommenen Daten statt. In der  Regel werden die Daten lediglich über eine Zeitspanne von mehreren Tagen oder;
 
 
-** Quelle 2: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.62)**
+**Quelle 2: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.62)**
 • Zeitpunktbezug   
 Im ODS findet keine explizite Historisierung der übernommenen Daten statt. In der  Regel werden die Daten lediglich über eine Zeitspanne von mehreren Tagen oder   Wochen – primär aus Recovery-Gründen – vorgehalten. Daher sind auch keine zeit - raumbezogenen Auswertungen möglich. 
 • Volatilität 
@@ -21,12 +21,12 @@ Die Daten im ODS werden regelmäßig aktualisiert. Jede Änderung der Daten in d
 • Hoher Detaillierungsgrad Da die Daten im ODS hauptsächlich für Analysen auf der Basis des operativen Kontex-;
 
 
-** Quelle 3: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung (S.62)**
+**Quelle 3: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung (S.62)**
 Daten sinnvoll nutzen zu können, sollte ein ODS eine hohe Performance aufweisen.
 • Hoher Detaillierungsgrad 
 Da die Daten im ODS hauptsächlich für Analysen auf der Basis des operativen Kontex- tes herangezogen werden, werden sie sehr detailliert festgehalten. Häufig erfolgt die  2 Datenbereitstellung und -modellierung;
 
-** Quelle 4: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.47)**
+**Quelle 4: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.47)**
 Komponenten zum Einsatz, die gesondert in Abschn. 2.5 behandelt werden. Data Marts sind kleinere Datenpools für eine Klasse von Applikationen, die i. d. R. für  einen eingeschränkten Benutzerkreis aufgebaut werden. Ihre Daten werden mit Hilfe weiterer Transformationsprozesse aus dem Core Data Warehouse extrahiert. Ein Operational Data Store beinhaltet aktuelle transaktionsorientierte Daten aus verschiedenen operativen Quellsystemen und stellt sie für Anwendungs- und Auswertungszwecke bereit. Die Daten werden hierbei jedoch nicht längerfristig historisiert, sondern –  in Analogie zur operativen Datenhaltung  – im Bedarfsfalle durch neue Transaktionen  überschrieben (Inmon et al. 2000, S. 218 f.; Mucksch 2006, S. 136). Die Metadaten beschreiben die Datenstruktur der gespeicherten DWH- und ODS-   Daten. Sie können daher als „Daten über Daten“ bezeichnet werden und
 erlauben eine  gezielte und strukturierte Auswertung von Informationen über Zusammenhänge der ge -;
 
@@ -472,7 +472,7 @@ Metadaten können nach den folgenden Nutzungskategorien unterschieden werden (St
 
     {   "id": 4,
         "prompt": "For a seminar paper in the course “Digitalization an AI” write an analytical text discussing the opportunities and positive impacts of using artificial intelligence in higher education teaching. Identify and critically examine what you consider to be the three most significant opportunities. Support your analysis with relevant academic literature and credible sources.**",
-        "context": """**Quelle 1: Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact of AI-Assisted Learning.pdf (S.1)**
+        "context": """ **Quelle 1: Vargas-Murillo et al. - 2023 - Challenges and Opportunities of AI-Assisted Learning A Systematic Literature Review on the Impact of AI-Assisted Learning.pdf (S.1)**
 challenges and opportunities of  artificial intelligence - (AI) assisted  learning, all within the research area of dig ital education. For this, a systematic literature review (SLR) was conducted across multiple journal  databases, analyzing the articles found and filtering them with the use of specific criteria. The results of this analysis afforded the conclusion that   that ChatGPT can potentially enhance both academic - and librarian - related processes, although it is important to reconsider the ethics of using  technology such as this . This is because  this kind of AI technology also  has the potential to modify the way people take on different jobs, tasks ,  and processes at an academic level, for which the correct and responsible  use of ChatGPT needs to be assessed in the field of higher education.      
 Keywords: artificial intelligence; ChatGPT; higher education; learning  methodologies; smart learning;
 
