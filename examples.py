@@ -1075,7 +1075,7 @@ start detection
                 {
                     "start": 1113,
                     "end": 1274,
-                    "text": "### 3. Potential Misuse for Dishonesty\nAnother significant risk is the temptation to misuse AI for dishonest purposes, such as copying answers without proper citation.",
+                    "text": "Another significant risk is the temptation to misuse AI for dishonest purposes, such as copying answers without proper citation.",
                     "confidence": 0.2,
                     "explanation": "Dieser Punkt ('Misuse for Dishonesty') ist inhaltlich nahezu identisch mit Punkt 1 ('Erosion of Academic Integrity'). Dies als separaten, dritten 'significant risk' darzustellen, ist irreführend und analytisch schwach."
                 },
