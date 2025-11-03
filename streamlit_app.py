@@ -77,7 +77,7 @@ def render_token(tokens_with_probs: list[dict]) -> str:
 # ---------- Haupt-App ----------
 def main():
     st.set_page_config(page_title="RAG-Halluzinationen", page_icon="🤖")
-    st.title("RAG-Chabot evaluation")
+    st.title("RAG-Chabot Evaluation")
     # Zustand verwalten
     if "index" not in st.session_state:
         st.session_state.index = 0
@@ -119,6 +119,7 @@ Die farblichen Markierungen im Text heben Passagen hervor, die von einem automat
         rendered = render_hallucinations(ex["answer"], ex["hallucinations"])
     st.markdown(rendered, unsafe_allow_html=True)
 
+    print(repr(ex["context"][:20]))
     # Kontext ausklappbar unter der Antwort
     with st.expander("📚 Kontext anzeigen"):
         st.markdown(
