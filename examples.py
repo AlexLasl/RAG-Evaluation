@@ -2,7 +2,7 @@
 
 examples = [
     {   "id": 1,
-        "prompt": "Ich bin Student im Bereich Wirtschaftsinformatik und versuche gerade zu verstehen, was genau ein Operational Data Store (ODS) ist. Kannst du mir bitte einfach und verständlich erklären, was ein ODS ist und macht.",
+        "prompt": "Was genau ist ein Operational Data Store (ODS)? Kannst du mir bitte einfach und verständlich erklären, was ein ODS ist und was er macht.",
         "context": """**Quelle 1: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.62)**
 (Inmon 1999, S. 12 ff.). Die einzelnen Charakteristika des ODS werden im Folgenden  erläutert: 
 • Themenorientierung 
