@@ -85,19 +85,28 @@ def main():
 
 
 
-    if ex["id"] <= 2:
+    if ex["id"] <= 1:
        
        st.markdown("""
 Diese Demo zeigt simulierte Antworten eines RAG-Chatbots.  
 
     """)
-    else:
+    elif ex["id"]==2:
         st.markdown("""
 Die farblichen Markierungen im Text heben Passagen hervor, die von einem automatischen Erkennungssystem als potenziell fehlerhaft eingestuft wurden. Die Farbintensität gibt dabei an, wie sicher sich das System in seiner Einschätzung ist:
 
 - <span style='background-color:rgba(255, 77, 77, 0.3); padding:2px 4px; border-radius:4px;'>Rot: mit hoher Sicherheit fehlerhaft</span>  
 - <span style='background-color:rgba(255, 166, 77, 0.3); padding:2px 4px; border-radius:4px;'>Orange: möglicherweise fehlerhaft</span>  
 - <span style='background-color:rgba(255, 255, 204, 0.5); padding:2px 4px; border-radius:4px;'>Gelb: mit geringer Sicherheit fehlerhaft</span>
+""", unsafe_allow_html=True)
+    else:
+         st.markdown("""
+Die farblichen Markierungen im Text heben Passagen hervor, die von einem automatischen Erkennungssystem als potenziell fehlerhaft eingestuft wurden. Die Farbintensität gibt dabei an, wie sicher sich das System in seiner Einschätzung ist:
+
+- <span style='background-color:rgba(255, 77, 77, 0.3); padding:2px 4px; border-radius:4px;'>Rot: mit hoher Sicherheit fehlerhaft</span>  
+- <span style='background-color:rgba(255, 166, 77, 0.3); padding:2px 4px; border-radius:4px;'>Orange: möglicherweise fehlerhaft</span>  
+- <span style='background-color:rgba(255, 255, 204, 0.5); padding:2px 4px; border-radius:4px;'>Gelb: mit geringer Sicherheit fehlerhaft</span>
+Zusätzlich wird eine kurze Erklärung zur Einschätzung angezeigt.
 """, unsafe_allow_html=True)
 
 
