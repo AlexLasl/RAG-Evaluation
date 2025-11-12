@@ -334,7 +334,7 @@ Metadaten können nach den folgenden Nutzungskategorien unterschieden werden (St
     },
       {       "id": 3,
         "prompt": "Im ETL-Prozess eines Data Warehouses wird von unterschiedlichen Datenmängeln gesprochen. Kannst du mir erklären, was diese Begriffe bedeuten und wie sich die verschiedenen Klassen der Mängel unterscheiden?",
-        "answer": """In einem ETL (Extract, Transform, Load) Prozess eines Data Warehouses werden verschiedene Arten von Datenmängeln gesprochen. Diese Mängel können syntaktische und semantische Fehler sein, die in den extrahierten Daten vorhanden sind.
+        "answer": """Im ETL-Prozess (Extract, Transform, Load) eines Data Warehouses werden unterschiedliche Arten von Datenmängeln betrachtet. Diese Mängel können syntaktische und semantische Fehler sein, die in den extrahierten Daten vorhanden sind.
 
 1. Syntaktische Fehler sind Fehler in der formalen Darstellung der Daten. Sie entstehen durch irreguläre Zeichen, ungültige Verbindungen, oder ungültige Werte in den extrahierten Daten. Sie können durch implementierte Transformationsregeln automatisiert behoben werden, da sie bekannt sind oder ihr Auftreten antizipiert werden kann. Beispiel: Syntaktische Fehler durch interne Format- oder Steuerzeichen.
 
@@ -379,12 +379,12 @@ Die syntaktischen und semantischen Mängel der 1. Klasse können durch implement
                   "end": 222,
                   "text": "ungültige Werte",
                   "explanation": "Der Kontexttext (S. 50) nennt 'unkorrekte Datenwerte' explizit als Beispiel für einen *semantischen* Mangel, nicht für einen syntaktischen. Die Zuordnung im Antworttext ist daher irreführend und potenziell falsch.",
-                  "confidence": 1.0
+                  "confidence": 0.7
                 },
                 {
                   "start": 250,
                   "end": 372,
-                  "text": "Sie können durch implementierte Transformationsregeln automatisiert behoben werden, da sie bekannt sind oder ihr Auftreten antizipiert werden kann.",
+                  "text": "durch implementierte Transformationsregeln automatisiert behoben werden, da sie bekannt sind oder ihr Auftreten antizipiert werden kann.",
                   "explanation": "Diese Aussage wird im Antworttext pauschal für alle syntaktischen Fehler getroffen. Laut Kontexttext (S. 49) ist dies jedoch die Definition für 'Mängel der 1. Klasse', welche sowohl syntaktische als auch semantische Mängel umfassen. Es ist eine unzulässige Verallgemeinerung, da nicht alle syntaktischen Fehler zwingend zur 1. Klasse gehören müssen.",
                   "confidence": 0.8
                 },
@@ -398,7 +398,7 @@ Die syntaktischen und semantischen Mängel der 1. Klasse können durch implement
                 {
                   "start": 532,
                   "end": 695,
-                  "text": "die durch Plausibilitätsprüfungen, einfache Wertebereichs-prüfungen oder Verfahren der Mustererkennung nicht identifiziert werden können und nur von Fachexperten erkannt werden können.",
+                  "text": "durch Plausibilitätsprüfungen, einfache Wertebereichs-prüfungen oder Verfahren der Mustererkennung nicht identifiziert werden können und nur von Fachexperten erkannt werden können.",
                   "explanation": "Der Antworttext stellt dies als allgemeingültige Definition für *alle* semantischen Fehler dar. Der Kontexttext (S. 50) führt dies jedoch als Eigenschaft eines *Beispiels* für semantische Mängel an, die eine manuelle Identifikation erfordern (3. Klasse). Laut Kontext (S. 49) gibt es aber auch semantische Mängel der 1. Klasse, die automatisiert erkannt und behoben werden. Die Aussage ist somit eine falsche Verallgemeinerung.",
                   "confidence": 0.8
                 },
