@@ -111,9 +111,9 @@ Die farblichen Markierungen im Text heben Passagen hervor, die von einem automat
 
     # Antwort anzeigen
     st.subheader("💬 Antwort des Chatbots")
-    if ex["id"] <= 2:
+    if ex["id"] <= 1:
         rendered = ex["answer"]
-    elif ex["id"] <= 4:
+    elif ex["id"] <= 2:
         rendered = render_token(ex["halucinations_token"])
     else:
         rendered = render_hallucinations(ex["answer"], ex["hallucinations"])
