@@ -3,7 +3,9 @@
 examples = [
     {   "id": 1,
         "prompt": "Was genau ist ein Operational Data Store (ODS)? Kannst du mir bitte einfach und verständlich erklären, was ein ODS ist und was er macht.",
-        "context": """**Quelle 1: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.62)**
+        "context": """
+
+**Quelle 1: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.62)**
 (Inmon 1999, S. 12 ff.). Die einzelnen Charakteristika des ODS werden im Folgenden  erläutert: 
 • Themenorientierung 
 Die Konzeption eines ODS erfogt  – genau wie beim Data Warehouse  – anhand entscheidungsorientierter Perspektiven. Häufig verwendete Dimensionen betreffen z. B. die  Produkte, Regionen oder Kunden (vgl. Abschn. 2.2.1). 
@@ -39,7 +41,7 @@ Der ODS besitzt folgende Charakteristika:
 2. Integration: Die Daten im ODS stammen aus den operativen Quellsystemen eines Unternehmens und werden dabei zu einer einheitlichen, inhaltlich widerspruchsfreien Datensammlung transformiert. Der Transformationsprozess zur Befüllung ist daher identisch zum transformationsprozess zum Beladen des Data Warehouse.
 3. Zeitraumbezug: Im ODS werden die übernommenen Daten so abgelegt, dass sie einen bestimmten Zeitraum, etwa einen Tag oder eine Woche, repräsentieren. Dadurch können zeitraumbezogene Analysen und Vergleiche durchgeführt werde
 4. Volatilität: Die Daten im ODS werden regelmäßig aktualisiert und werden durch jede Änderung der Daten in den Quellsystemen überschrieben. Die Aktualisierung kann transaktionssynchron, d.h. zeitlich parallel zu den Änderungen in den Quellsystemen, stündlich oder täglich durchgeführt werden.
-5. Hoher Detaillierungsgrad: Die Daten im ODS sind sehr detailliert festgehalten, um Analysen auf der Basis des operativen Kontextes unterstützen zu können.
+5. Hoher Detaillierungsgrad: Die Daten im ODS sind sehr detailliert festgehalten, um Analysen auf der Basis des strategischen Kontextes unterstützen zu können.
 
 In Summe kann man den ODS als eine Art Zwischenspeicher betrachten, der aktuelle, transaktionsorientierte Daten aus verschiedenen operativen Quellsystemen sammelt und bereitstellt. Er ist ein wichtiger Baustein für die Unterstützung von Anwendungen und Analysen auf der Basis des operativen Kontextes.
         """,
