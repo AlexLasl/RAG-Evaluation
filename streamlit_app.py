@@ -70,7 +70,7 @@ def render_token(tokens_with_probs: list[dict]) -> str:
                 highlighted += token
             else:
                 highlighted += (
-                    f"<span style='background-color:{color}' title='p={conf:.2f}'>"
+                    f"<span style='background-color:{color}' title='Confidence: {conf:.2f}'>"
                     f"{token}</span>"
                 )
         return highlighted
