@@ -390,21 +390,21 @@ Die syntaktischen und semantischen Mängel der 1. Klasse können durch implement
                   "start": 250,
                   "end": 372,
                   "text": "durch implementierte Transformationsregeln automatisiert behoben werden, da sie bekannt sind oder ihr Auftreten antizipiert werden kann.",
-                  "explanation": "Diese Aussage wird im Antworttext pauschal für alle syntaktischen Fehler getroffen. Laut Kontexttext (S. 49) ist dies jedoch die Definition für 'Mängel der 1. Klasse', welche sowohl syntaktische als auch semantische Mängel umfassen. Es ist eine unzulässige Verallgemeinerung, da nicht alle syntaktischen Fehler zwingend zur 1. Klasse gehören müssen.",
+                  "explanation": "Diese Aussage wird im Antworttext pauschal für alle syntaktischen Fehler getroffen. Laut Kontexttext (S. 50) ist dies jedoch die Definition für 'Mängel der 1. Klasse', welche sowohl syntaktische als auch semantische Mängel umfassen. Es ist eine unzulässige Verallgemeinerung, da nicht alle syntaktischen Fehler zwingend zur 1. Klasse gehören müssen.",
                   "confidence": 0.8
                 },
                 {
                   "start": 382,
                   "end": 441,
                   "text": "Syntaktische Fehler durch interne Format- oder Steuerzeichen.",
-                  "explanation": "Das Zitat aus dem Kontexttext (S. 49) ist unvollständig. Im Originaltext heisst es 'interne Format-, Steuer- oder Sonderzeichen'. Das Weglassen der 'Sonderzeichen' macht die Aussage ungenau.",
+                  "explanation": "Das Zitat aus dem Kontexttext (S. 50) ist unvollständig. Im Originaltext heisst es 'interne Format-, Steuer- oder Sonderzeichen'. Das Weglassen der 'Sonderzeichen' macht die Aussage ungenau.",
                   "confidence": 0.3
                 },
                 {
                   "start": 532,
                   "end": 695,
                   "text": "durch Plausibilitätsprüfungen, einfache Wertebereichs-prüfungen oder Verfahren der Mustererkennung nicht identifiziert werden können und nur von Fachexperten erkannt werden können.",
-                  "explanation": "Der Antworttext stellt dies als allgemeingültige Definition für *alle* semantischen Fehler dar. Der Kontexttext (S. 50) führt dies jedoch als Eigenschaft eines *Beispiels* für semantische Mängel an, die eine manuelle Identifikation erfordern (3. Klasse). Laut Kontext (S. 49) gibt es aber auch semantische Mängel der 1. Klasse, die automatisiert erkannt und behoben werden. Die Aussage ist somit eine falsche Verallgemeinerung.",
+                  "explanation": "Der Antworttext stellt dies als allgemeingültige Definition für *alle* semantischen Fehler dar. Der Kontexttext (S. 50) führt dies jedoch als Eigenschaft eines *Beispiels* für semantische Mängel an, die eine manuelle Identifikation erfordern (3. Klasse). Laut Kontext (S. 50) gibt es aber auch semantische Mängel der 1. Klasse, die automatisiert erkannt und behoben werden. Die Aussage ist somit eine falsche Verallgemeinerung.",
                   "confidence": 0.8
                 },
                 {
