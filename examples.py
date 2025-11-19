@@ -89,6 +89,7 @@ Weitere Arten von Metadaten sind (semi-)aktive Metadaten, die Strukturinformatio
 Metadaten dienen zur Effizienzsteigerung der Entwicklung und des Betriebs von BIA-Anwendungssystemen und erleichtern die Navigation und stellen detaillierte Informationen über Systemkomponenten sowie Prozesse zur Verfügung.
         """,
         "context": """
+
 **Quelle 1: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.65)**
 43 2.3.4 Metadaten, Stammdaten und Referenzdaten Metadaten werden zur Beschreibung der Bedeutung und der Eigenschaften von Objekten eingesetzt, um diese besser interpretieren, einordnen, verwalten und nutzen zu können. So werden beispielsweise Bücher in Bibliotheken mit Signaturen versehen, nach Schlagwor- ten registriert und auf der Basis von Titeln, Autoren, Einsatzgebieten u. ä. klassifiziert. Diese Informationen werden in Form von Metadaten in spezielle Systeme eingestellt, ge- pflegt und den Benutzern zugänglich gemacht, um die Buchbestände sinnvoll verwenden zu können. 
 Die Begrifflichkeit meta lässt sich aus dem Griechischen ableiten und wird hier in der Bedeutung „auf einer höheren Stufe bzw. Ebene befindlich“ verwendet. 
@@ -352,7 +353,9 @@ Die verschiedenen Klassen der Mängel unterscheiden sich in der Art der Defekter
 
 Im Falle, dass die Berichtigung der operativen Quellsysteme nicht sofort erfolgen kann, wird die Bereinigung der semantischen Fehler in der Filterungsschicht des Data Warehouse vorzunehmen.
   """,
-        "context": """**Quelle 1: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.50)**
+        "context": """
+        
+**Quelle 1: Baars, H., & Kemper, H.-G. (2021). Business Intelligence & Analytics – Grundlagen und praktische Anwendungen: Ansätze der IT-basierten Entscheidungsunterstützung.pdf (S.50)**
 28 (Staging Areas) des Data Warehouse eingestellt. In modernen DWH-Umgebungen werden die dabei extrahierten Daten teilweise parallel noch in einem sog. Staging Memory  oder Corporate Memory archiviert, um später bei Bedarf die Herkunft von DWH-Daten  reproduzieren zu können. Die Bereinigung dient der Befreiung der extrahierten Daten sowohl von syntaktischen  als auch von semantischen Mängeln. Unter syntaktischen Mängeln  sind hierbei formelle Mängel der codetechnischen  Darstellung zu verstehen. Semantische Mängel  betreffen dagegen Mängel in den betriebswirtschaftlichen Inhalten der Daten. In diesem Zusammenhang können mehrere Klassen von Mängeln identifiziert werden: 
 • 1. Klasse: Automatisierbare Defekterkennung mit automatisierbarer Korrektur während des Extraktionsvorganges. 
 • 2. Klasse: Automatisierbare Defekterkennung mit manueller Korrektur nach dem Extraktionsvorgang. 

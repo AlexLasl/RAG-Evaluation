@@ -130,7 +130,7 @@ Zusätzlich wird eine kurze Erklärung zur Einschätzung angezeigt.
 
     print(repr(ex["context"][:20]))
     # Kontext ausklappbar unter der Antwort
-    with st.expander("📚 Kontext anzeigen"):
+    with st.expander("📚 Quellen anzeigen"):
         st.markdown(
         f"<div style='white-space: pre-line; margin: 0; font-family: sans-serif;'>{html.escape(ex['context'])}</div>",
         unsafe_allow_html=True
